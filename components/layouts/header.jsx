@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import CardModal from "../ui/card-modal";
 import Logo from "../ui/logo";
 import MobileMenu from "../ui/mobile-menu";
+import { FaBars } from "react-icons/fa";
 
 const Header = () => {
   const [isCardModal, setIsCardModal] = useState(false);
@@ -9,7 +10,7 @@ const Header = () => {
   return (
     <header>
       <div className="bg-yellow p-2 block max-sm:hidden max-md:hidden max-lg:hidden max-xl:hidden">
-        <div className="container mx-auto px-[]">
+        <div className="container mx-auto">
           <div className="flex-row flex-wrap items-center">
             <div className="grid grid-cols-2 gap-2">
               <div className="flex items-center">
@@ -80,10 +81,6 @@ const Header = () => {
                   <i>
                     <svg
                       className="w-8 h-auto mr-1"
-                      clip-rule="evenodd"
-                      fill-rule="evenodd"
-                      stroke-linejoin="round"
-                      stroke-miterlimit="2"
                       viewBox="0 0 32 32"
                       fill="black"
                       xmlns="http://www.w3.org/2000/svg"
@@ -114,11 +111,10 @@ const Header = () => {
                   <Logo />
                 </a>
               </div>
-              <div class="hidden cart-checkout max-sm:flex max-md:flex max-lg:flex max-xl:flex">
+              <div className="hidden cart-checkout max-sm:flex max-md:flex max-lg:flex max-xl:flex">
                 <a href="">
                   <i>
                     <svg
-                      enable-background="new 0 0 512 512"
                       viewBox="0 0 512 512"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -128,25 +124,9 @@ const Header = () => {
                     </svg>
                   </i>
                 </a>
-                <div class="bar-menu">
+                <div className="bar-menu">
                   <button onClick={() => setIsMobileMenu(true)}>
-                    <i>
-                      <svg
-                        viewBox="0 0 24 24"
-                        width="24"
-                        height="24"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        fill="none"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="css-i6dzq1"
-                      >
-                        <line x1="3" y1="12" x2="21" y2="12"></line>
-                        <line x1="3" y1="6" x2="21" y2="6"></line>
-                        <line x1="3" y1="18" x2="21" y2="18"></line>
-                      </svg>
-                    </i>
+                    <FaBars />
                   </button>
                 </div>
               </div>
@@ -210,7 +190,6 @@ const Header = () => {
                     className="w-[1.563rem] h-[1.563rem] mr-5 block"
                     id="Shoping-bags"
                     fill="black"
-                    enable-background="new 0 0 512 512"
                     viewBox="0 0 512 512"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -226,7 +205,7 @@ const Header = () => {
                   ></CardModal>
                 )}
               </div>
-              <a href="" className="bg-pink button font-bold  font-fredoka">
+              <a href="" className="bg-pink button font-bold font-fredoka">
                 Reserve a Table
               </a>
             </div>

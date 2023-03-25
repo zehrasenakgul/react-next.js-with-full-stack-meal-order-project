@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Header from "../components/layouts/header";
 import Footer from "../components/layouts/footer";
+import Carousel from "../components/carousel";
 
 export default function Index() {
   return (
@@ -13,10 +14,11 @@ export default function Index() {
         <link
           rel="preconnect"
           href="https://fonts.gstatic.com"
-          crossorigin="true"
+          crossOrigin="true"
         />
       </Head>
       <Header />
+      <Carousel />
       <Footer />
     </div>
   );
