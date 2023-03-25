@@ -1,12 +1,14 @@
 import React, { useState } from "react";
+import CardModal from "../ui/card-modal";
 import Logo from "../ui/logo";
-import OutsideClickHandler from "react-outside-click-handler";
+import MobileMenu from "../ui/mobile-menu";
 
 const Header = () => {
-  const [isCardModal, setisCardModal] = useState(false);
+  const [isCardModal, setIsCardModal] = useState(false);
+  const [isMobileMenu, setIsMobileMenu] = useState(false);
   return (
     <header>
-      <div className="bg-yellow p-2">
+      <div className="bg-yellow p-2 block max-sm:hidden max-md:hidden max-lg:hidden max-xl:hidden">
         <div className="container mx-auto px-[]">
           <div className="flex-row flex-wrap items-center">
             <div className="grid grid-cols-2 gap-2">
@@ -105,72 +107,17 @@ const Header = () => {
       </div>
       <div className="bg-white h-[7rem]">
         <div className="container mx-auto h-full">
-          <div className="flex-row flex-wrap items-center h-full">
-            <div className="flex items-center justify-between h-full">
+          <div className="flex flex-wrap items-center justify-between h-full">
+            <div className="flex items-center justify-between h-full w-full xl:w-auto">
               <div className="logo">
                 <a href="">
                   <Logo />
                 </a>
               </div>
-              <nav className="flex items-center relative justify-center p-0">
-                <ul className="flex list-none">
-                  <li className="relative">
-                    <a
-                      href="#"
-                      className="text-black hover:text-pink font-bold font-fredoka border-b-[0.313rem] border-transparent capitalize text-lg block py-[2.5rem] px-[1.563]"
-                    >
-                      Home
-                    </a>
-                  </li>
-                  <li className="relative">
-                    <a
-                      href="#"
-                      className="text-black hover:text-pink font-bold font-fredoka border-b-[0.313rem] border-transparent capitalize text-lg block py-[2.5rem] px-[1.563rem]"
-                    >
-                      Menus
-                    </a>
-                  </li>
-                  <li className="relative">
-                    <a
-                      href="#"
-                      className="text-black hover:text-pink font-bold font-fredoka border-b-[0.313rem] border-transparent capitalize text-lg block py-[2.5rem] px-[1.563rem]"
-                    >
-                      Shop
-                    </a>
-                  </li>
-                  <li className="relative">
-                    <a
-                      href="#"
-                      className="text-black  hover:text-pink font-bold font-fredoka border-b-[0.313rem] border-transparent capitalize text-lg block py-[2.5rem] px-[1.563rem]"
-                    >
-                      News
-                    </a>
-                  </li>
-                  <li className="relative">
-                    <a
-                      href="#"
-                      className="text-black hover:text-pink font-bold font-fredoka border-b-[0.313rem] border-transparent capitalize text-lg block py-[2.5rem] px-[1.563rem]"
-                    >
-                      Pages
-                    </a>
-                  </li>
-                  <li className="relative">
-                    <a
-                      href="#"
-                      className="text-black hover:text-pink font-bold font-fredoka border-b-[0.313rem] border-transparent capitalize text-lg block py-[2.5rem] px-[1.563rem]"
-                    >
-                      Contact
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-              <div className="flex items-center justify-end">
-                <div className="relative donation">
-                  <button onClick={() => setisCardModal(true)}>
+              <div class="hidden cart-checkout max-sm:flex max-md:flex max-lg:flex max-xl:flex">
+                <a href="">
+                  <i>
                     <svg
-                      className="w-[1.563rem] h-[1.563rem] mr-5 block"
-                      id="Shoping-bags"
-                      fill="black"
                       enable-background="new 0 0 512 512"
                       viewBox="0 0 512 512"
                       xmlns="http://www.w3.org/2000/svg"
@@ -179,86 +126,119 @@ const Header = () => {
                         <path d="m452 120h-60.946c-7.945-67.478-65.477-120-135.054-120s-127.109 52.522-135.054 120h-60.946c-11.046 0-20 8.954-20 20v352c0 11.046 8.954 20 20 20h392c11.046 0 20-8.954 20-20v-352c0-11.046-8.954-20-20-20zm-196-80c47.484 0 87.019 34.655 94.659 80h-189.318c7.64-45.345 47.175-80 94.659-80zm176 432h-352v-312h40v60c0 11.046 8.954 20 20 20s20-8.954 20-20v-60h192v60c0 11.046 8.954 20 20 20s20-8.954 20-20v-60h40z"></path>
                       </g>
                     </svg>
-                  </button>
-                  {isCardModal && (
-                    <OutsideClickHandler
-                      onOutsideClick={() => setisCardModal(false)}
-                    >
-                      <div
-                        className={
-                          "cart-popup" + (isCardModal ? " show-cart" : "")
-                        }
-                      >
-                        <button
-                          type="button"
-                          className="close bg-pink"
-                          onClick={() => setisCardModal(false)}
-                        >
-                          ×
-                        </button>
-
-                        <ul>
-                          <li className="flex items-center relative">
-                            {/* <div className="p-img light-bg">
-
-                          <img src="assets/img/product-img-1.png" alt="Product Image">
-
-                        </div> */}
-
-                            <div className="p-data">
-                              <h3 className="font-fredoka">Brown Sandwich</h3>
-                              <p className="font-fredoka">1 x $10.50</p>
-                            </div>
-                          </li>
-
-                          <li className="flex items-center relative">
-                            {/* <div className="p-img light-bg">
-
-                          <img src="assets/img/product-img-1.png" alt="Product Image">
-
-                        </div> */}
-
-                            <div className="p-data">
-                              <h3 className="font-fredoka">Banana Leaves</h3>
-
-                              <p className="font-fredoka">1 x $12.60</p>
-                            </div>
-                          </li>
-                        </ul>
-
-                        <div className="cart-total flex items-center justify-between">
-                          <span className="font-fredoka">Total:</span>
-
-                          <span className="font-fredoka">$23.10</span>
-                        </div>
-
-                        <div className="cart-btns flex items-center justify-between">
-                          <a
-                            className="font-bold text-black"
-                            href="shop-cart.html"
-                          >
-                            View Cart
-                          </a>
-
-                          <a
-                            className="font-bold bg-pink text-white checkout"
-                            href="cart-checkout.html"
-                          >
-                            Checkout
-                          </a>
-                        </div>
-                      </div>
-                    </OutsideClickHandler>
-                  )}
-                </div>
-                <a href="" className="bg-pink button font-bold  font-fredoka">
-                  Reserve a Table
+                  </i>
                 </a>
+                <div class="bar-menu">
+                  <button onClick={() => setIsMobileMenu(true)}>
+                    <i>
+                      <svg
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="css-i6dzq1"
+                      >
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                      </svg>
+                    </i>
+                  </button>
+                </div>
               </div>
+            </div>
+            <nav className="flex items-center relative justify-center p-0 max-sm:hidden max-md:hidden max-lg:hidden max-xl:hidden">
+              <ul className="flex list-none">
+                <li className="relative">
+                  <a
+                    href="#"
+                    className="text-black hover:text-pink font-bold font-fredoka border-b-[0.313rem] border-transparent capitalize text-lg block py-[2.5rem] px-[1.563rem]"
+                  >
+                    Home
+                  </a>
+                </li>
+                <li className="relative">
+                  <a
+                    href="#"
+                    className="text-black hover:text-pink font-bold font-fredoka border-b-[0.313rem] border-transparent capitalize text-lg block py-[2.5rem] px-[1.563rem]"
+                  >
+                    Menus
+                  </a>
+                </li>
+                <li className="relative">
+                  <a
+                    href="#"
+                    className="text-black hover:text-pink font-bold font-fredoka border-b-[0.313rem] border-transparent capitalize text-lg block py-[2.5rem] px-[1.563rem]"
+                  >
+                    Shop
+                  </a>
+                </li>
+                <li className="relative">
+                  <a
+                    href="#"
+                    className="text-black  hover:text-pink font-bold font-fredoka border-b-[0.313rem] border-transparent capitalize text-lg block py-[2.5rem] px-[1.563rem]"
+                  >
+                    News
+                  </a>
+                </li>
+                <li className="relative">
+                  <a
+                    href="#"
+                    className="text-black hover:text-pink font-bold font-fredoka border-b-[0.313rem] border-transparent capitalize text-lg block py-[2.5rem] px-[1.563rem]"
+                  >
+                    Pages
+                  </a>
+                </li>
+                <li className="relative">
+                  <a
+                    href="#"
+                    className="text-black hover:text-pink font-bold font-fredoka border-b-[0.313rem] border-transparent capitalize text-lg block py-[2.5rem] px-[1.563rem]"
+                  >
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div className="flex items-center justify-end max-sm:hidden max-md:hidden max-lg:hidden max-xl:hidden">
+              <div className="relative donation">
+                <button onClick={() => setIsCardModal(true)}>
+                  <svg
+                    className="w-[1.563rem] h-[1.563rem] mr-5 block"
+                    id="Shoping-bags"
+                    fill="black"
+                    enable-background="new 0 0 512 512"
+                    viewBox="0 0 512 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g>
+                      <path d="m452 120h-60.946c-7.945-67.478-65.477-120-135.054-120s-127.109 52.522-135.054 120h-60.946c-11.046 0-20 8.954-20 20v352c0 11.046 8.954 20 20 20h392c11.046 0 20-8.954 20-20v-352c0-11.046-8.954-20-20-20zm-196-80c47.484 0 87.019 34.655 94.659 80h-189.318c7.64-45.345 47.175-80 94.659-80zm176 432h-352v-312h40v60c0 11.046 8.954 20 20 20s20-8.954 20-20v-60h192v60c0 11.046 8.954 20 20 20s20-8.954 20-20v-60h40z"></path>
+                    </g>
+                  </svg>
+                </button>
+                {isCardModal && (
+                  <CardModal
+                    setIsCardModal={setIsCardModal}
+                    isCardModal={isCardModal}
+                  ></CardModal>
+                )}
+              </div>
+              <a href="" className="bg-pink button font-bold  font-fredoka">
+                Reserve a Table
+              </a>
             </div>
           </div>
         </div>
       </div>
+      {isMobileMenu && (
+        <MobileMenu
+          isMobileMenu={isMobileMenu}
+          setIsMobileMenu={setIsMobileMenu}
+        ></MobileMenu>
+      )}
     </header>
   );
 };

@@ -1,7 +1,8 @@
+import Image from "next/image";
 import React from "react";
 
 const Logo = () => {
-  return <div className="font-fredoka text-5xl text-black">Foodio</div>;
+  return (<Image src="/img/logo.png" width={183} height={65} alt="" />);
 };
 
 export default Logo;
