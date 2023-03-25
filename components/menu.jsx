@@ -332,7 +332,7 @@ const Menu = () => {
                     id="link1"
                   >
                     <div className="flex max-sm:block items-center discover-menu">
-                      <div className="w-1/2 max-sm:w-full">
+                      <div className="w-1/2 max-sm:w-full mr-10">
                         <div className="discover-img">
                           <Image
                             src="/img/discover-1.png"
@@ -342,7 +342,7 @@ const Menu = () => {
                           ></Image>
                         </div>
                       </div>
-                      <div className="w-1/2 max-sm:w-full">
+                      <div className="w-1/2 max-sm:w-full mr-10">
                         <div className="discover z-[2] relative">
                           <h4>Dessert</h4>
                           <ul>
@@ -384,7 +384,7 @@ const Menu = () => {
                     id="link2"
                   >
                     <div className="flex max-sm:block items-center discover-menu">
-                      <div className="w-1/2 max-sm:w-full">
+                      <div className="w-1/2 max-sm:w-full mr-10">
                         <div className="discover-img">
                           <Image
                             src="/img/discover-2.png"
@@ -394,7 +394,7 @@ const Menu = () => {
                           ></Image>
                         </div>
                       </div>
-                      <div className="w-1/2 max-sm:w-full">
+                      <div className="w-1/2 max-sm:w-full mr-10">
                         <div className="discover z-[2] relative">
                           <h4>Steak </h4>
                           <ul>
@@ -436,7 +436,7 @@ const Menu = () => {
                     id="link3"
                   >
                     <div className="flex max-sm:block items-center discover-menu">
-                      <div className="w-1/2 max-sm:w-full">
+                      <div className="w-1/2 max-sm:w-full mr-10">
                         <div className="discover-img">
                           <Image
                             src="/img/discover-3.png"
@@ -446,7 +446,7 @@ const Menu = () => {
                           ></Image>
                         </div>
                       </div>
-                      <div className="w-1/2 max-sm:w-full">
+                      <div className="w-1/2 max-sm:w-full mr-10">
                         <div className="discover z-[2] relative">
                           <h4>Coffee Menu</h4>
                           <ul>
@@ -488,7 +488,7 @@ const Menu = () => {
                     id="link4"
                   >
                     <div className="flex max-sm:block items-center discover-menu">
-                      <div className="w-1/2 max-sm:w-full">
+                      <div className="w-1/2 max-sm:w-full mr-10">
                         <div className="discover-img">
                           <Image
                             src="/img/discover-8.png"
@@ -498,7 +498,7 @@ const Menu = () => {
                           ></Image>
                         </div>
                       </div>
-                      <div className="w-1/2 max-sm:w-full">
+                      <div className="w-1/2 max-sm:w-full mr-10">
                         <div className="discover z-[2] relative">
                           <h4>pizza</h4>
                           <ul>
@@ -540,7 +540,7 @@ const Menu = () => {
                     id="link5"
                   >
                     <div className="flex max-sm:block items-center discover-menu">
-                      <div className="w-1/2 max-sm:w-full">
+                      <div className="w-1/2 max-sm:w-full mr-10">
                         <div className="discover-img">
                           <Image
                             src="/img/discover-7.png"
@@ -550,7 +550,7 @@ const Menu = () => {
                           ></Image>
                         </div>
                       </div>
-                      <div className="w-1/2 max-sm:w-full">
+                      <div className="w-1/2 max-sm:w-full mr-10">
                         <div className="discover z-[2] relative">
                           <h4>burger</h4>
                           <ul>

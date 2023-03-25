@@ -7,6 +7,7 @@ import Banner from "../components/banner";
 import Brand from "../components/brand";
 import New from "../components/new";
 import App from "../components/app";
+import Feature from "../components/feature";
 
 export default function Index() {
   return (
@@ -25,7 +26,9 @@ export default function Index() {
       <Header />
       <Carousel />
       <Menu />
+      <Feature />
       <Banner />
+
       <App />
       <New />
       <Brand />
