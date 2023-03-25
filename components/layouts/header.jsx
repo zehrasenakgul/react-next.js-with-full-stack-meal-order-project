@@ -3,6 +3,7 @@ import CardModal from "../ui/cardModal";
 import Logo from "../ui/logo";
 import MobileMenu from "../ui/mobileMenu";
 import { FaBars } from "react-icons/fa";
+import Link from "next/link";
 
 const Header = () => {
   const [isCardModal, setIsCardModal] = useState(false);
@@ -167,10 +168,10 @@ const Header = () => {
                 </li>
                 <li className="relative">
                   <a
-                    href="#"
+                    href="about"
                     className="text-black hover:text-pink font-bold font-fredoka border-b-[0.313rem] border-transparent capitalize text-lg block py-[2.5rem] px-[1.563rem]"
                   >
-                    Pages
+                    About
                   </a>
                 </li>
                 <li className="relative">
