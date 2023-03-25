@@ -2,6 +2,7 @@ import Head from "next/head";
 import Header from "../components/layouts/header";
 import Footer from "../components/layouts/footer";
 import Carousel from "../components/carousel";
+import Menu from "../components/menu";
 
 export default function Index() {
   return (
@@ -19,6 +20,7 @@ export default function Index() {
       </Head>
       <Header />
       <Carousel />
+      <Menu />
       <Footer />
     </div>
   );
