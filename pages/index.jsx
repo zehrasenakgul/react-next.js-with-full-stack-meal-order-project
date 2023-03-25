@@ -4,6 +4,9 @@ import Footer from "../components/layouts/footer";
 import Carousel from "../components/carousel";
 import Menu from "../components/menu";
 import Banner from "../components/banner";
+import Brand from "../components/brand";
+import New from "../components/new";
+import App from "../components/app";
 
 export default function Index() {
   return (
@@ -23,6 +26,9 @@ export default function Index() {
       <Carousel />
       <Menu />
       <Banner />
+      <App />
+      <New />
+      <Brand />
       <Footer />
     </div>
   );

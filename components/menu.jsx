@@ -5,7 +5,7 @@ const Menu = () => {
   const [openTab, setOpenTab] = React.useState(1);
 
   return (
-    <section className="section-discover-menu mt-16">
+    <section className="section-discover-menu mt-24">
       <div className="container mx-auto">
         <div class="heading-two">
           <h2 className="font-fredoka font-bold text-6xl max-sm:text-3xl max-md:text-3xl">

@@ -23,6 +23,7 @@ module.exports = {
       },
       fontFamily: {
         fredoka: ["Fredoka", "sans-serif"],
+        epilogue: ["Epilogue", "sans-serif"],
       },
     },
   },

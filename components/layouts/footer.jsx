@@ -3,7 +3,7 @@ import WhiteLogo from "../ui/whiteLogo";
 
 const Footer = () => {
   return (
-    <footer className="bg-white pt-[6.25rem] bg-cover center">
+    <footer className=" pt-[6.25rem] bg-cover center">
       <div className="container mx-auto h-full">
         <div className="flex max-sm:block max-md:block max-lg:block max-sm:pt-[3.75]">
           <div className="bg-pink p-10 rounded-3xl logo-white basis-1/3 mr-20 max-sm:mr-5">
