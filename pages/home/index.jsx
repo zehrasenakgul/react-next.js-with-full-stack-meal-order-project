@@ -1,8 +1,13 @@
 import React from "react";
+import Carousel from "../../components/carousel";
+import Menu from "../../components/menu";
 
 const Index = () => {
   return (
-    <div className="text-red-600 font-fredoka text-center text-3xl">Home</div>
+    <>
+      <Carousel />
+      <Menu />{" "}
+    </>
   );
 };
 

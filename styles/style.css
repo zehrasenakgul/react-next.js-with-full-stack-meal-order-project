@@ -872,3 +872,39 @@ section.slider-hero {
   margin-bottom: 60px;
   margin-top: 10px;
 }
+
+.bbq {
+  padding: 30px;
+  padding-bottom: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 30px;
+}
+.bbr-price {
+  background-color: #ffd40d;
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 12px;
+  transform: translateY(22px);
+}
+.bbq h2 {
+  color: white;
+}
+.bbq p {
+  color: white;
+  font-size: 18px;
+  line-height: 30px;
+}
+.bbr-price h3 {
+  font-size: 32px;
+}
+
+.gap {
+  padding: 120px 0;
+}

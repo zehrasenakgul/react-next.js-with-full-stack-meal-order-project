@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import CardModal from "../ui/card-modal";
+import CardModal from "../ui/cardModal";
 import Logo from "../ui/logo";
-import MobileMenu from "../ui/mobile-menu";
+import MobileMenu from "../ui/mobileMenu";
 import { FaBars } from "react-icons/fa";
 
 const Header = () => {

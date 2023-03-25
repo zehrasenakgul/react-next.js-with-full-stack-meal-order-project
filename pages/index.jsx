@@ -3,6 +3,7 @@ import Header from "../components/layouts/header";
 import Footer from "../components/layouts/footer";
 import Carousel from "../components/carousel";
 import Menu from "../components/menu";
+import Banner from "../components/banner";
 
 export default function Index() {
   return (
@@ -21,6 +22,7 @@ export default function Index() {
       <Header />
       <Carousel />
       <Menu />
+      <Banner />
       <Footer />
     </div>
   );
