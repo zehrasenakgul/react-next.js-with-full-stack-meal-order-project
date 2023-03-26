@@ -49,10 +49,10 @@ const MobileMenu = ({ isMobileMenu, setIsMobileMenu }) => {
           </li>
           <li className="relative">
             <a
-              href="#"
+              href="about"
               className="text-black hover:text-pink font-bold font-fredoka border-b-[0.313rem] border-transparent capitalize text-lg block "
             >
-              Pages
+             About
             </a>
           </li>
           <li className="relative">

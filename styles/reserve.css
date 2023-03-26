@@ -1,0 +1,106 @@
+
+/* 14. reserve-table */
+.reserve-table {
+    padding: 70px;
+    border-radius: 30px;
+    position: relative;
+    z-index: 11;
+}
+.reserve-table-text h3 {
+    width: 62%;
+    font-size: 50px;
+    color: white;
+    text-transform: uppercase;
+    border-bottom: 3px solid #ffd40d;
+}
+.reserve-table-text p{
+    font-size: 18px;
+    color: white;
+    padding-top: 30px;
+} 
+.reserve-table .best-food-restaurants form {
+    margin-left: 30px;
+    text-align: end;
+}
+.reserve-table .button{
+    background-color: #ffd40d;
+    color: black;
+}
+.reserve-table .button:before{
+    border: 3px solid #ffd40d;
+}
+.section-featured {
+    padding-top: 330px;
+    margin-top: -210px;
+}
+.bbtn a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+}
+.bbtn {
+    position: relative;
+    width: 76%;
+    margin: auto;
+    margin-top: 30px;
+}
+.bbtn a img{
+    border-radius: 50%;
+}
+.circle-layer {
+    animation-name: rotateme;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: rotateme;
+    -webkit-animation-duration: 15s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: rotateme;
+    -moz-animation-duration: 15s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: rotateme;
+    -ms-animation-duration: 15s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    -o-animation-name: rotateme;
+    -o-animation-duration: 15s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-timing-function: linear;
+}
+@keyframes rotateme {
+    from {
+        transform: rotate(0deg);
+    }
+    to { 
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes rotateme {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to { 
+        -webkit-transform: rotate(360deg);
+    }
+}
+@-moz-keyframes rotateme {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+    to { 
+        -moz-transform: rotate(360deg);
+    }
+}
+@-o-keyframes rotateme {
+    from {
+        -o-transform: rotate(0deg);
+    }
+    to { 
+        -o-transform: rotate(360deg);
+    }
+}
