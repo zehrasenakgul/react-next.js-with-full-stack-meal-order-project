@@ -1,0 +1,148 @@
+
+/* 60. checkout-meta */
+form.checkout-meta {
+    background-color: transparent;
+    padding: 0;
+}
+form.checkout-meta input {
+    width: 100%;
+    height: 65px;
+    border-radius: 10px;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    border: 3px solid #d6deec;
+    color: black;
+    outline: none;
+    font-family: 'Epilogue';
+}
+form.checkout-meta input::placeholder{
+    color: black;
+}
+form.checkout-meta.donate-page .nice-select.Advice {
+    margin-bottom: 15px;
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    padding-left: 30px;
+    border: 3px solid #d6deec;
+    padding-top: 10px;
+    font-family: 'Epilogue';
+}
+.nice-select:after {
+    right: 25px;
+}
+form.checkout-meta .ship-address{
+    display: block;
+}
+form.checkout-meta .ship-address input {
+    width: 0%;
+    height: 0;
+}
+ul.list {
+    width: 100%;
+}
+.ship-address label {
+    padding-left: 30px;
+    padding-top: 10px;
+    font-family: 'Epilogue';
+}
+.ship-address input[type='radio']:after{
+    top: 16px;
+}
+.cart_totals.cart-Total {
+    border: 0;
+    padding: 0;
+}
+.cart_totals.cart-Total tr.Total {
+    background-color: #ed274b;
+    color: white;
+    border-radius: 0;
+}
+.checkout-side h3 {
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.woocommerce-additional-fields h3{
+    font-size: 24px;
+}
+.woocommerce-additional-fields textarea.input-text {
+    width: 100%;
+    border-radius: 10px;
+    height: 300px;
+    padding: 25px;
+    color: black;
+    border: 3px solid #d6deec;
+    outline: none;
+    font-family: 'Epilogue';
+}
+.woocommerce-additional-fields textarea.input-text::placeholder{
+    color: black;
+}
+/* 61. checkout-side */
+form.checkout-meta .checkout-side input {
+    width: 0;
+}
+form.checkout-meta .checkout-side label {
+    padding-left: 30px;
+    color: white;
+}
+form.checkout-meta .checkout-side input[type='radio']:after{
+    top: 6%;
+    border-radius: 0;
+}
+form.checkout-meta .checkout-side input[type='radio']:checked:after{
+    top: 6%;
+    background-color: #ffd40d;
+}
+.checkout-side ul li {
+    display: flex;
+    align-items: baseline;
+    height: 44px;
+}
+.checkout-side ul {
+    margin-bottom: 10px;
+}
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    left: -1px;
+    position: relative;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+.woocommerce-additional-fields {
+    margin-top: 30px;
+}
+.woocommerce-additional-fields h3{
+    padding-bottom: 20px;
+}
+.cart_totals-checkout {
+    padding: 40px;
+    border-radius: 22px;
+}
+.checkout-side .button{
+    background-color: #ffd40d;
+}
+.checkout-side .button:before{
+    border: 3px solid #ffd40d;
+}
+.checkout-side .button{
+    color: black;
+}

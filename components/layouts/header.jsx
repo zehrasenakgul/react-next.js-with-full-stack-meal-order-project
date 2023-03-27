@@ -113,7 +113,7 @@ const Header = () => {
                 </a>
               </div>
               <div className="hidden cart-checkout max-sm:flex max-md:flex max-lg:flex max-xl:flex">
-                <a href="">
+                <a href="cart">
                   <i>
                     <svg
                       viewBox="0 0 512 512"

@@ -64,7 +64,7 @@ const CardModal = ({ setIsCardModal, isCardModal }) => {
 
           <a
             className="font-bold bg-pink text-white checkout"
-            href="cart-checkout.html"
+            href="checkout"
           >
             Checkout
           </a>
