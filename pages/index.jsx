@@ -8,7 +8,6 @@ import Brand from "../components/brand";
 import New from "../components/new";
 import App from "../components/app";
 import Feature from "../components/feature";
-import Input from "../components/input";
 import Reserve from "../components/reserve";
 
 export default function Index() {

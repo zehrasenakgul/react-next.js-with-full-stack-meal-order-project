@@ -344,35 +344,53 @@ const Menu = () => {
                       </div>
                       <div className="w-1/2 max-sm:w-full mr-10">
                         <div className="discover z-[2] relative">
-                          <h4>Dessert</h4>
+                          <h4 className="font-fredoka font-bold text-5xl">
+                            Dessert
+                          </h4>
                           <ul>
                             <li>
                               <div>
-                                <h6>Four Chease Garlic Bread</h6>
+                                <h6 className="font-fredoka font-bold text-3xl">
+                                  Four Chease Garlic Bread
+                                </h6>
                                 <p>Toested french bread topped with romano</p>
                               </div>
-                              <span>$9.00</span>
+                              <span className="font-fredoka font-bold text-pink">
+                                $9.00
+                              </span>
                             </li>
                             <li>
                               <div>
-                                <h6>Rastrami Roll</h6>
+                                <h6 className="font-fredoka font-bold text-3xl">
+                                  Rastrami Roll
+                                </h6>
                                 <p>Spreadable cream cheese, blue cheese</p>
                               </div>
-                              <span>$16.00</span>
+                              <span className="font-fredoka font-bold text-pink">
+                                $16.00
+                              </span>
                             </li>
                             <li>
                               <div>
-                                <h6>Caprese Salad Kabobs</h6>
+                                <h6 className="font-fredoka font-bold text-3xl">
+                                  Caprese Salad Kabobs
+                                </h6>
                                 <p>Cherry-size fresh mozzarella cheese balls</p>
                               </div>
-                              <span>$34.00</span>
+                              <span className="font-fredoka font-bold text-pink">
+                                $34.00
+                              </span>
                             </li>
                             <li>
                               <div>
-                                <h6>Peachy Jalepeno Guacomole</h6>
+                                <h6 className="font-fredoka font-bold text-3xl">
+                                  Peachy Jalepeno Guacomole
+                                </h6>
                                 <p>Ground cumin, avocados, peeled and cubed</p>
                               </div>
-                              <span>$40.00</span>
+                              <span className="font-fredoka font-bold text-pink">
+                                $40.00
+                              </span>
                             </li>
                           </ul>
                         </div>
@@ -396,35 +414,53 @@ const Menu = () => {
                       </div>
                       <div className="w-1/2 max-sm:w-full mr-10">
                         <div className="discover z-[2] relative">
-                          <h4>Steak </h4>
+                          <h4 className="font-fredoka font-bold text-5xl">
+                            Steak{" "}
+                          </h4>
                           <ul>
                             <li>
                               <div>
-                                <h6>Four Chease Garlic Bread</h6>
+                                <h6 className="font-fredoka font-bold text-3xl">
+                                  Four Chease Garlic Bread
+                                </h6>
                                 <p>Toested french bread topped with romano</p>
                               </div>
-                              <span>$9.00</span>
+                              <span className="font-fredoka font-bold text-pink">
+                                $9.00
+                              </span>
                             </li>
                             <li>
                               <div>
-                                <h6>Rastrami Roll</h6>
+                                <h6 className="font-fredoka font-bold text-3xl">
+                                  Rastrami Roll
+                                </h6>
                                 <p>Spreadable cream cheese, blue cheese</p>
                               </div>
-                              <span>$16.00</span>
+                              <span className="font-fredoka font-bold text-pink">
+                                $16.00
+                              </span>
                             </li>
                             <li>
                               <div>
-                                <h6>Caprese Salad Kabobs</h6>
+                                <h6 className="font-fredoka font-bold text-3xl">
+                                  Caprese Salad Kabobs
+                                </h6>
                                 <p>Cherry-size fresh mozzarella cheese balls</p>
                               </div>
-                              <span>$34.00</span>
+                              <span className="font-fredoka font-bold text-pink">
+                                $34.00
+                              </span>
                             </li>
                             <li>
                               <div>
-                                <h6>Peachy Jalepeno Guacomole</h6>
+                                <h6 className="font-fredoka font-bold text-3xl">
+                                  Peachy Jalepeno Guacomole
+                                </h6>
                                 <p>Ground cumin, avocados, peeled and cubed</p>
                               </div>
-                              <span>$40.00</span>
+                              <span className="font-fredoka font-bold text-pink">
+                                $40.00
+                              </span>
                             </li>
                           </ul>
                         </div>
@@ -448,35 +484,53 @@ const Menu = () => {
                       </div>
                       <div className="w-1/2 max-sm:w-full mr-10">
                         <div className="discover z-[2] relative">
-                          <h4>Coffee Menu</h4>
+                          <h4 className="font-fredoka font-bold text-5xl">
+                            Coffee Menu
+                          </h4>
                           <ul>
                             <li>
                               <div>
-                                <h6>Espresso Macchiato</h6>
+                                <h6 className="font-fredoka font-bold text-3xl">
+                                  Espresso Macchiato
+                                </h6>
                                 <p>Chicken / Apple / Tomatos</p>
                               </div>
-                              <span>$9.00</span>
+                              <span className="font-fredoka font-bold text-pink">
+                                $9.00
+                              </span>
                             </li>
                             <li>
                               <div>
-                                <h6>Mocha Whipped Cream</h6>
+                                <h6 className="font-fredoka font-bold text-3xl">
+                                  Mocha Whipped Cream
+                                </h6>
                                 <p>Bacon / Shrimp / Garlic</p>
                               </div>
-                              <span>$16.00</span>
+                              <span className="font-fredoka font-bold text-pink">
+                                $16.00
+                              </span>
                             </li>
                             <li>
                               <div>
-                                <h6>Cold Coffee</h6>
+                                <h6 className="font-fredoka font-bold text-3xl">
+                                  Cold Coffee
+                                </h6>
                                 <p>Pork / Tomatoes / Veggies</p>
                               </div>
-                              <span>$34.00</span>
+                              <span className="font-fredoka font-bold text-pink">
+                                $34.00
+                              </span>
                             </li>
                             <li>
                               <div>
-                                <h6>Caramel Macchiato</h6>
+                                <h6 className="font-fredoka font-bold text-3xl">
+                                  Caramel Macchiato
+                                </h6>
                                 <p>Prawn / Sausage / Totatos</p>
                               </div>
-                              <span>$40.00</span>
+                              <span className="font-fredoka font-bold text-pink">
+                                $40.00
+                              </span>
                             </li>
                           </ul>
                         </div>
@@ -500,35 +554,53 @@ const Menu = () => {
                       </div>
                       <div className="w-1/2 max-sm:w-full mr-10">
                         <div className="discover z-[2] relative">
-                          <h4>pizza</h4>
+                          <h4 className="font-fredoka font-bold text-5xl">
+                            pizza
+                          </h4>
                           <ul>
                             <li>
                               <div>
-                                <h6>Four Chease Garlic Bread</h6>
+                                <h6 className="font-fredoka font-bold text-3xl">
+                                  Four Chease Garlic Bread
+                                </h6>
                                 <p>Toested french bread topped with romano</p>
                               </div>
-                              <span>$9.00</span>
+                              <span className="font-fredoka font-bold text-pink">
+                                $9.00
+                              </span>
                             </li>
                             <li>
                               <div>
-                                <h6>Rastrami Roll</h6>
+                                <h6 className="font-fredoka font-bold text-3xl">
+                                  Rastrami Roll
+                                </h6>
                                 <p>Spreadable cream cheese, blue cheese</p>
                               </div>
-                              <span>$16.00</span>
+                              <span className="font-fredoka font-bold text-pink">
+                                $16.00
+                              </span>
                             </li>
                             <li>
                               <div>
-                                <h6>Caprese Salad Kabobs</h6>
+                                <h6 className="font-fredoka font-bold text-3xl">
+                                  Caprese Salad Kabobs
+                                </h6>
                                 <p>Cherry-size fresh mozzarella cheese balls</p>
                               </div>
-                              <span>$34.00</span>
+                              <span className="font-fredoka font-bold text-pink">
+                                $34.00
+                              </span>
                             </li>
                             <li>
                               <div>
-                                <h6>Peachy Jalepeno Guacomole</h6>
+                                <h6 className="font-fredoka font-bold text-3xl">
+                                  Peachy Jalepeno Guacomole
+                                </h6>
                                 <p>Ground cumin, avocados, peeled and cubed</p>
                               </div>
-                              <span>$40.00</span>
+                              <span className="font-fredoka font-bold text-pink">
+                                $40.00
+                              </span>
                             </li>
                           </ul>
                         </div>
@@ -552,35 +624,53 @@ const Menu = () => {
                       </div>
                       <div className="w-1/2 max-sm:w-full mr-10">
                         <div className="discover z-[2] relative">
-                          <h4>burger</h4>
+                          <h4 className="font-fredoka font-bold text-5xl">
+                            burger
+                          </h4>
                           <ul>
                             <li>
                               <div>
-                                <h6>Four Chease Garlic Bread</h6>
+                                <h6 className="font-fredoka font-bold text-3xl">
+                                  Four Chease Garlic Bread
+                                </h6>
                                 <p>Toested french bread topped with romano</p>
                               </div>
-                              <span>$9.00</span>
+                              <span className="font-fredoka font-bold text-pink">
+                                $9.00
+                              </span>
                             </li>
                             <li>
                               <div>
-                                <h6>Rastrami Roll</h6>
+                                <h6 className="font-fredoka font-bold text-3xl">
+                                  Rastrami Roll
+                                </h6>
                                 <p>Spreadable cream cheese, blue cheese</p>
                               </div>
-                              <span>$16.00</span>
+                              <span className="font-fredoka font-bold text-pink">
+                                $16.00
+                              </span>
                             </li>
                             <li>
                               <div>
-                                <h6>Caprese Salad Kabobs</h6>
+                                <h6 className="font-fredoka font-bold text-3xl">
+                                  Caprese Salad Kabobs
+                                </h6>
                                 <p>Cherry-size fresh mozzarella cheese balls</p>
                               </div>
-                              <span>$34.00</span>
+                              <span className="font-fredoka font-bold text-pink">
+                                $34.00
+                              </span>
                             </li>
                             <li>
                               <div>
-                                <h6>Peachy Jalepeno Guacomole</h6>
+                                <h6 className="font-fredoka font-bold text-3xl">
+                                  Peachy Jalepeno Guacomole
+                                </h6>
                                 <p>Ground cumin, avocados, peeled and cubed</p>
                               </div>
-                              <span>$40.00</span>
+                              <span className="font-fredoka font-bold text-pink">
+                                $40.00
+                              </span>
                             </li>
                           </ul>
                         </div>

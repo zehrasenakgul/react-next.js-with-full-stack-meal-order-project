@@ -25,15 +25,15 @@ const MobileMenu = ({ isMobileMenu, setIsMobileMenu }) => {
           </li>
           <li className="relative">
             <a
-              href="#"
+              href="menu"
               className="text-black hover:text-pink font-bold font-fredoka border-b-[0.313rem] border-transparent capitalize text-lg block "
             >
-              Menus
+              Menu
             </a>
           </li>
           <li className="relative">
             <a
-              href="#"
+              href="shop"
               className="text-black hover:text-pink font-bold font-fredoka border-b-[0.313rem] border-transparent capitalize text-lg block "
             >
               Shop
@@ -52,7 +52,7 @@ const MobileMenu = ({ isMobileMenu, setIsMobileMenu }) => {
               href="about"
               className="text-black hover:text-pink font-bold font-fredoka border-b-[0.313rem] border-transparent capitalize text-lg block "
             >
-             About
+              About
             </a>
           </li>
           <li className="relative">

@@ -26,7 +26,7 @@ const Banner = () => {
   return (
     <section className="gap">
       <div className="container mx-auto">
-        <div className="flex justify-between container mx-auto py-20 gap-6 flex-wrap">
+        <div className="flex justify-between container mx-auto gap-6 flex-wrap">
           <BannerItem />
           <BannerItem />
         </div>
