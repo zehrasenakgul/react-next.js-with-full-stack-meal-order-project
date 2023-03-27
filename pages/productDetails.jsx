@@ -6,7 +6,7 @@ import { FaHome, FaStar, FaCheck } from "react-icons/fa";
 import Image from "next/image";
 import Review from "../components/review";
 
-const ProductDetail = () => {
+const ProductDetails = () => {
   return (
     <>
       <Head>
@@ -166,4 +166,4 @@ const ProductDetail = () => {
   );
 };
 
-export default ProductDetail;
+export default ProductDetails;

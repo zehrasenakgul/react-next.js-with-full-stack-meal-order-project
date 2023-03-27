@@ -4,43 +4,28 @@ import { FaStar } from "react-icons/fa";
 
 const ReviewItem = () => {
   return (
-    <div className="single-comment font-fredoka">
+    <li className="single-comment children">
       <Image
-        src="/img/review.jpg"
-        width={200}
-        height={200}
-        alt=""
-        className="review-img"
-      />
-      <div className="ps-md-4 ml-4 max-sm:mt-5">
+        className="me-3"
+        src="/img/comment-2.jpg"
+        width={130}
+        height={130}
+        alt="img"
+      />{" "}
+      <a href="#" className="bg-pink">
+        reply
+      </a>
+      <div className="ps-md-4 ml-5">
         <div className="flex items-center">
-          <h4 className="font-bold text-5xl">Smith Johnson</h4>
-          <span className="text-pink font-bold">Jun 07, 2023</span>
+          <h4>Smith Johnson</h4>
+          <span className="text-pink">January 7, 2023 </span>
         </div>
-        <p className="text-[#555]">
-          Integer sollicitudin ligula non enim sodales non lacinia commodo
-          tempor mod licitudin. Integer sollicitudin ligula non enim sodales non
-          lacinia commodo tempor mod licitudin.
+        <p>
+          Nellente sque um ac quam nec odio rbine. Nisl quam nestibulum ac quam
+          nec io elementu aucan ligula.
         </p>
       </div>
-      <ul className="star">
-        <li>
-          <FaStar />
-        </li>
-        <li>
-          <FaStar />
-        </li>
-        <li>
-          <FaStar />
-        </li>
-        <li>
-          <FaStar />
-        </li>
-        <li>
-          <FaStar />
-        </li>
-      </ul>
-    </div>
+    </li>
   );
 };
 
@@ -48,23 +33,59 @@ const Review = () => {
   return (
     <section className="gap no-top font-fredoka">
       <div className="container mx-auto">
+        <div className="comment">
+          <h3>02 Comments</h3>
+          <ul>
+            <li className="single-comment">
+              <Image
+                className="me-3"
+                src="/img/comment-1.jpg"
+                width={130}
+                height={130}
+                alt="img"
+              />
+              <a href="#" className="bg-pink">
+                reply
+              </a>
+              <div className="ps-md-4 ml-5">
+                <div className="flex items-center">
+                  <h4>Smith Johnson</h4>
+                  <span className="text-pink">January 7, 2023 </span>
+                </div>
+                <p>
+                  Nellente sque um ac quam nec odio rbine. Nisl quam nestibulum
+                  ac quam nec io elementu aucan ligula.
+                </p>
+              </div>
+            </li>
+            <li className="single-comment children">
+              <Image
+                className="me-3"
+                src="/img/comment-2.jpg"
+                width={130}
+                height={130}
+                alt="img"
+              />{" "}
+              <a href="#" className="bg-pink">
+                reply
+              </a>
+              <div className="ps-md-4 ml-5">
+                <div className="flex items-center">
+                  <h4>Smith Johnson</h4>
+                  <span className="text-pink">January 7, 2023 </span>
+                </div>
+                <p>
+                  Nellente sque um ac quam nec odio rbine. Nisl quam nestibulum
+                  ac quam nec io elementu aucan ligula.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
         <div className="review">
-          <h3 className="font-bold text-6xl">Review</h3>
-          <ReviewItem />
-          <ReviewItem />
           <form className="add-review leave-comment">
             <div className="rating">
               <h3>Add Review</h3>
-              <div className="flex items-center">
-                <span>Your Rating</span>
-                <div className="start flex items-center ps-md-4 ml-3">
-                  <FaStar />
-                  <FaStar />
-                  <FaStar />
-                  <FaStar />
-                  <FaStar />
-                </div>
-              </div>
             </div>
             <div className="flex flex-wrap">
               <div className="w-1/2 pl-0 pr-2 max-sm:w-full max-sm:pr-0">

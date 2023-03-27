@@ -1,40 +1,83 @@
-
 /* 73. posts */
 .posts {
-    border: 4px solid #ffd40d;
-    padding: 40px;
-    border-radius: 20px;
-    margin-bottom: 20px;
+  border: 4px solid #ffd40d;
+  padding: 40px;
+  border-radius: 20px;
+  margin-bottom: 20px;
 }
 .recent-posts li {
-    display: flex;
-    align-items: center;
-    padding-top: 15px;
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
 }
 .recent-posts img {
-    margin-right: 10px;
-    border-radius: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
 }
 .recent-posts li h6 a {
-    color: black;
-    font-size: 20px;
+  color: black;
+  font-size: 20px;
 }
 ul.categories li a {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: capitalize;
 }
 ul.categories {
-    background-color: #f5f8fd;
-    padding: 30px;
-    border-radius: 20px;
-    margin-top: 20px;
+  background-color: #f5f8fd;
+  padding: 30px;
+  border-radius: 20px;
+  margin-top: 20px;
 }
 ul.categories li {
-    padding-top: 15px;
+  padding-top: 15px;
 }
 ul.categories li:not(:last-child) {
-    border-bottom: 3px solid #e0e0e0;
-    padding-bottom: 15px;
+  border-bottom: 3px solid #e0e0e0;
+  padding-bottom: 15px;
+}
+
+/* 76. comment */
+.comment {
+  padding-top: 70px;
+}
+.comment h3 {
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+form.add-review.leave-comment.comment {
+  margin-top: 0;
+}
+.single-comment {
+  background-color: white;
+  display: flex;
+  position: relative;
+  padding: 20px;
+  border: 3px solid #ffd40d;
+  border-radius: 20px;
+  align-items: center;
+  padding-right: 40px;
+  margin-bottom: 20px;
+}
+.single-comment h4 {
+  padding-right: 20px;
+}
+li.single-comment.children {
+  margin-left: 40px;
+}
+.comment .single-comment:before {
+  display: none;
+}
+.single-comment a {
+  position: absolute;
+  right: 15px;
+  padding: 5px 20px;
+  top: 10px;
+  color: white;
+  text-transform: capitalize;
+  border-radius: 10px;
+}
+li.single-comment span {
+  text-transform: uppercase;
 }

@@ -35,7 +35,7 @@ const ShopItem = () => {
             <FaStar className="star" />
           </li>
         </ul>
-        <a href="productDetail">
+        <a href="productDetails">
           <h5 className="font-fredoka font-bold text-xl text-black">
             Parisian Hamburger
           </h5>
@@ -43,7 +43,7 @@ const ShopItem = () => {
         <p className="font-fredoka font-bold">
           <span className="text-pink">$</span>10.85
         </p>
-        <a href="productDetail">
+        <a href="productDetails">
           <i>
             <svg
               className="featured-shopping-bag hover:bg-pink"
