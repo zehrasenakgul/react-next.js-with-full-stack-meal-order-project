@@ -595,6 +595,14 @@ button.update-cart {
   color: white;
   cursor: pointer;
 }
+@media (max-width:768px) {
+  button.update-cart {
+    padding: 20px 30px;
+  } 
+  button.apply-coupon {
+    padding: 20px 30px;
+  }
+}
 button.update-cart:hover {
   background-color: black;
 }

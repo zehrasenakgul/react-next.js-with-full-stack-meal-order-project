@@ -1,0 +1,136 @@
+
+/* 59. shop_table */
+table.shop_table {
+    width: 100%;
+}
+table.shop_table thead {
+    height: 75px;
+    color: white;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+}
+table.shop_table tr td {
+    padding: 20px;
+    border: 1px solid #c1c1c1;
+    text-align: center;
+}
+table.shop_table td.product-name span {
+    font-size: 16px;
+    color: #555;
+    display: block;
+    font-family: 'Epilogue';
+}
+table.shop_table td.product-subtotal span {
+    font-size: 22px;
+}
+table.shop_table td.product-name a {
+    display: block;
+    font-size: 20px;
+}
+table.shop_table td.product-quantity input {
+    padding: 14px;
+    border: 3px solid #ffd40d;
+    outline: none;
+    width: 100px;
+    border-radius: 11px;
+}
+table.shop_table td.product-name {
+    display: flex;
+    text-align: inherit;
+    align-items: center;
+    margin: -1px;
+    margin-top: 0;
+}
+table.shop_table td.product-name img {
+    margin-right: 28px;
+}
+table.shop_table th {
+    text-align: center;
+    font-weight: 100;
+}
+table.shop_table td.product-price {
+    text-align: inherit;
+}
+.shop_table.table-responsive tbody {
+    border: 1px solid #d1d1d1;
+}
+
+/* 57. coupon-area */
+.coupon-area{
+    padding: 40px;
+    background-color: #ffd40d;
+    border-radius: 15px;
+}
+.coupon-area h3{
+    font-size: 24px;
+}
+.coupon{
+    margin-top: 20px;
+}
+.coupon input {
+    border-radius: 10px;
+    width: 100%;
+    height: 65px;
+    border-radius: 10px;
+    padding-left: 30px;
+    border: 0;
+    margin-bottom: 20px;
+    outline: none;
+}
+.cart_totals {
+    padding: 54px;
+    color: white;
+    border-radius: 35px;
+    text-align: inherit;
+    border: 4px solid #ffd40d;
+}
+/* 58. table.shop */
+table.shop_table_responsive {
+    width: 100%;
+}
+table.shop_table_responsive {
+    border: 5px solid #fff;
+    background-color: white;
+}
+table.shop_table_responsive tbody{
+    padding-top: 20px;
+    display: block;
+}
+table.shop_table_responsive tr{
+    font-size: 20px;
+}
+table.shop_table_responsive th {
+    padding-bottom: 10px;
+    font-weight: 400;
+}
+form.woocommerce-cart-form .cart_totals h4 {
+    padding-bottom: 20px;
+    color: #000;
+}
+tr.Total {
+    background-color: #f5f8fd;
+    margin-top: 20px;
+}
+tr.Total th {
+    height: 60px;
+    line-height: 60px;
+}
+table.shop_table_responsive tr {
+    font-size: 16px;
+    display: flex;
+    border-radius: 36px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px ;
+    color: black;
+}
+.wc-proceed-to-checkout {
+    margin-top: 20px;
+}
+.shop_table-boder {
+    border: 4px solid #e4e4e4;
+    border-radius: 30px;
+    padding: 10px;
+    padding-top: 20px;
+}

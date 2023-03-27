@@ -58,7 +58,7 @@ const CardModal = ({ setIsCardModal, isCardModal }) => {
         </div>
 
         <div className="cart-btns flex items-center justify-between">
-          <a className="font-bold text-black" href="shop-cart.html">
+          <a className="font-bold text-black" href="cart">
             View Cart
           </a>
 
