@@ -1,0 +1,185 @@
+/* 63. product-detail */
+.featured-dishes.product-detail-img {
+  padding: 70px;
+  width: 90%;
+}
+.product-detail-img .featured-dishes-img:before {
+  width: 540px;
+  height: 240px;
+  border-radius: 300px;
+}
+.available {
+  display: flex;
+  align-items: center;
+}
+.available span {
+  color: #1f9d25;
+  margin-right: 30px;
+  text-transform: capitalize;
+}
+.available h6 {
+  color: #555;
+  font-size: 16px;
+  margin-left: 30px;
+}
+.product-info h3 {
+  font-size: 40px;
+  width: 83%;
+  margin-bottom: 25px;
+  margin-top: 16px;
+}
+.product-info h5 {
+  padding-top: 30px;
+}
+.variations_form input {
+  width: 120px;
+  height: 60px;
+  border-radius: 51px;
+  padding-left: 20px;
+  border: 3px solid #ffd40d;
+  outline: 0;
+  padding-right: 10px;
+}
+/* 64. product_meta */
+ul.product_meta {
+  padding-top: 20px;
+  margin-top: 40px;
+  border-top: 1px solid #e2e2e2;
+}
+ul.product_meta > li {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+ul.pd-cat,
+ul.pd-tag {
+  padding-left: 10px;
+}
+ul.product_meta li a {
+  color: #363636;
+  text-transform: capitalize;
+  padding-left: 8px;
+}
+.product-img img {
+  border-radius: 30px;
+}
+.product-img {
+  margin-top: 40px;
+}
+/* 65. benefits */
+.benefits {
+  padding-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.benefits ul li h6 {
+  font-family: "Epilogue";
+}
+
+/* 66. review */
+.review h3 {
+  font-size: 28px;
+}
+.review .single-comment {
+  border: 5px solid #ffd40d;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.rating {
+  display: flex;
+  justify-content: space-between;
+}
+.rating span {
+  font-size: 16px;
+  color: #666;
+}
+.rating i {
+  font-size: 20px;
+  color: #cccccc;
+}
+.add-review {
+  margin-top: 40px;
+}
+.add-review.leave-comment .btn {
+  width: auto;
+  margin: initial;
+}
+.single-comment h4 {
+  padding-right: 20px;
+  font-size: 26px;
+}
+.review h3 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+/* 67. leave-comment */
+.leave-comment input {
+  width: 100%;
+  height: 65px;
+  font-family: "Epilogue";
+  border: 3px solid #d6deec;
+  outline: none;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding-left: 30px;
+  color: #555;
+}
+.leave-comment input:focus,
+.leave-comment textarea:focus {
+  border: 3px solid #ffd40d;
+}
+.leave-comment input::placeholder,
+.leave-comment textarea::placeholder {
+  color: #555;
+}
+.leave-comment textarea {
+  width: 100%;
+  height: 190px;
+  padding-top: 22px;
+  border: 3px solid #d6deec;
+  font-family: "Epilogue";
+  outline: none;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding-left: 30px;
+  color: #555;
+}
+.single-comment.lest p {
+  padding-top: 14px;
+}
+.single-comment img {
+  border-radius: 20px;
+  position: relative;
+}
+.single-comment {
+  position: relative;
+}
+.single-comment:before {
+  background-color: #f3274c;
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 160px;
+  left: 0;
+  z-index: 0;
+  border-radius: 15px;
+}
+.single-comment .star {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-color: #ffd40d;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 37px;
+}
+.single-comment .star li {
+  line-height: 0;
+}
+form.add-review.leave-comment button.button {
+  width: auto;
+}
