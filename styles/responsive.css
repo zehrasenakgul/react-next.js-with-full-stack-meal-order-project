@@ -1174,7 +1174,7 @@
   }
   .section-discover-menu .nav-pills .nav-link.active:before {
     width: 89%;
-}
+  }
   .section-discover-menu .nav-pills .nav-link.active,
   .section-discover-menu .nav-pills .show > .nav-link {
     width: 100px;
@@ -1658,7 +1658,7 @@
     padding-bottom: 20px;
   }
   .pagination li {
-    width: 50px;
+    width: 50px !important;
   }
   ol.breadcrumb a,
   .breadcrumb-item.active {
