@@ -1,0 +1,40 @@
+
+/* 73. posts */
+.posts {
+    border: 4px solid #ffd40d;
+    padding: 40px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.recent-posts li {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+}
+.recent-posts img {
+    margin-right: 10px;
+    border-radius: 10px;
+}
+.recent-posts li h6 a {
+    color: black;
+    font-size: 20px;
+}
+ul.categories li a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+ul.categories {
+    background-color: #f5f8fd;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+ul.categories li {
+    padding-top: 15px;
+}
+ul.categories li:not(:last-child) {
+    border-bottom: 3px solid #e0e0e0;
+    padding-bottom: 15px;
+}

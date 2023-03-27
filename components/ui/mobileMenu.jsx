@@ -10,7 +10,7 @@ const MobileMenu = ({ isMobileMenu, setIsMobileMenu }) => {
         id="mobile-nav"
       >
         <div className="res-log">
-          <a href="">
+          <a href="home">
             <Logo />
           </a>
         </div>
@@ -41,7 +41,7 @@ const MobileMenu = ({ isMobileMenu, setIsMobileMenu }) => {
           </li>
           <li className="relative">
             <a
-              href="#"
+              href="news"
               className="text-black  hover:text-pink font-bold font-fredoka border-b-[0.313rem] border-transparent capitalize text-lg block "
             >
               News

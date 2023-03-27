@@ -108,7 +108,7 @@ const Header = () => {
           <div className="flex flex-wrap items-center justify-between h-full">
             <div className="flex items-center justify-between h-full w-full xl:w-auto">
               <div className="logo">
-                <a href="">
+                <a href="home">
                   <Logo />
                 </a>
               </div>
@@ -160,7 +160,7 @@ const Header = () => {
                 </li>
                 <li className="relative">
                   <a
-                    href="#"
+                    href="news"
                     className="text-black  hover:text-pink font-bold font-fredoka border-b-[0.313rem] border-transparent capitalize text-lg block py-[2.5rem] px-[1.563rem]"
                   >
                     News
