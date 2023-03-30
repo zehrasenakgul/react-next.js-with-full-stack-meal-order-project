@@ -57,7 +57,7 @@ const MobileMenu = ({ isMobileMenu, setIsMobileMenu }) => {
           </li>
           <li className="relative">
             <a
-              href="#"
+              href="contact"
               className="text-black hover:text-pink font-bold font-fredoka border-b-[0.313rem] border-transparent capitalize text-lg block "
             >
               Contact

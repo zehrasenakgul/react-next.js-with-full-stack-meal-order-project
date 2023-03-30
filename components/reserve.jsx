@@ -31,7 +31,7 @@ const Reserve = () => {
                       <Input />
                     </div>
                   </div>
-                  <div className="flex flex-row">
+                  <div className="flex flex-row items-center">
                     <div className="basis-1/2 m-2">
                       <Input />
                     </div>

@@ -1,0 +1,118 @@
+/* 77. contant */
+
+.get-in-touch .booking {
+    display: flex;
+}
+
+.get-in-touch .booking li {
+    display: block;
+    text-align: center;
+    width: 46%;
+    border: 5px solid #ffd40d;
+    margin: auto;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.get-in-touch .booking li i {
+    margin: auto;
+    background-color: #f3274c;
+    margin-bottom: 20px;
+}
+
+.get-in-touch .booking li svg {
+    width: 40px;
+    height: auto;
+    fill: white;
+}
+
+.get-in-touch h2 {
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+
+.mapouter iframe {
+    border-radius: 50px;
+    height: 270px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+
+/* 67. leave-comment */
+
+.leave-comment input {
+    width: 100%;
+    height: 65px;
+    font-family: 'Epilogue';
+    border: 3px solid #d6deec;
+    outline: none;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding-left: 30px;
+    color: #555;
+}
+
+.leave-comment input:focus,
+.leave-comment textarea:focus {
+    border: 3px solid #ffd40d;
+}
+
+.leave-comment input::placeholder,
+.leave-comment textarea::placeholder {
+    color: #555;
+}
+
+.leave-comment textarea {
+    width: 100%;
+    height: 190px;
+    padding-top: 22px;
+    border: 3px solid #d6deec;
+    font-family: 'Epilogue';
+    outline: none;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding-left: 30px;
+    color: #555;
+}
+
+.single-comment.lest p {
+    padding-top: 14px;
+}
+
+.single-comment img {
+    border-radius: 20px;
+    position: relative;
+}
+
+.single-comment {
+    position: relative;
+}
+
+.single-comment:before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 160px;
+    left: 0;
+    z-index: 0;
+    border-radius: 15px;
+}
+
+.single-comment .star {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: #ffd40d;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 37px;
+}
+
+.single-comment .star li {
+    line-height: 0;
+}
+
+form.add-review.leave-comment button.button {
+    width: auto;
+}
