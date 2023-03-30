@@ -136,7 +136,7 @@ const Header = () => {
               <ul className="flex list-none">
                 <li className="relative">
                   <a
-                    href="#"
+                    href="home"
                     className="text-black hover:text-pink font-bold font-fredoka border-b-[0.313rem] border-transparent capitalize text-lg block py-[2.5rem] px-[1.563rem]"
                   >
                     Home
