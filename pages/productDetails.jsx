@@ -1,10 +1,22 @@
 import Head from "next/head";
-import React from "react";
-
+import React, { useState } from "react";
 import { FaHome, FaStar, FaCheck } from "react-icons/fa";
 import Image from "next/image";
 import Review from "../components/review";
+
 const ProductDetails = () => {
+  const [quantityVal, setQuantityVal] = useState([]);
+  const [price, setPrice] = useState(10);
+
+  const setPriceFunction = (value, price) => {
+    setQuantityVal(value);
+    setPrice(value * price)
+  }
+
+  if (price == 0) {
+    setPrice(10)
+  }
+
   return (
     <>
       <Head>
@@ -17,7 +29,7 @@ const ProductDetails = () => {
           href="https://fonts.gstatic.com"
           crossOrigin="true"
         />
-</Head>
+      </Head>
       <div
         className="banner pt-10 pb-10"
         style={{
@@ -90,7 +102,7 @@ const ProductDetails = () => {
                 <form className="variations_form">
                   <div className="deal-week mb-4 flex items-center">
                     <h2 className="m-0 text-4xl">
-                      <span className="text-pink">$</span>10.85
+                      <span className="text-pink">$</span>{price}
                     </h2>
                     <del className="text-[#555555] text-2xl ml-2">$14.85</del>
                   </div>
@@ -102,10 +114,9 @@ const ProductDetails = () => {
                     <input
                       type="number"
                       className="input-text me-4"
-                      step="1"
-                      min="1"
                       name="quantity"
-                      value="1"
+                      placeholder="1"
+                      onChange={e => { setPriceFunction(e.currentTarget.value, price); }}
                     />
                     <button className="button bg-pink ml-4">Add to Cart</button>
                   </div>
@@ -158,7 +169,7 @@ const ProductDetails = () => {
         </div>
       </div>
       <Review />
-    
+
     </>
   );
 };
