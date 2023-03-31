@@ -94,7 +94,7 @@ const Header = () => {
                       </g>
                     </svg>
                   </i>
-                  <Link href="">
+                  <Link href="login">
                     <a className="font-bold text-black font-fredoka ml-2">
                       Login / Register
                     </a></Link>

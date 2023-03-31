@@ -1,0 +1,117 @@
+/* 56. box */
+
+.box.login {
+    background-color: #f5f8fd;
+    border-radius: 30px;
+}
+
+.box {
+    padding: 50px;
+}
+
+.box h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.box input {
+    height: 68px;
+    border: 0;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    border-radius: 20px;
+    width: 100%;
+    font-family: 'Epilogue';
+    outline: none;
+}
+
+.box form button {
+    margin-top: 25px;
+}
+
+.box form .remember input[type=checkbox] {
+    width: 15px;
+    height: 15px;
+    margin-bottom: 0;
+    margin-right: 8px;
+}
+
+.box form .remember {
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.box form .remember .first,
+.box form .remember {
+    display: flex;
+    align-items: center;
+}
+
+.box form .remember label {
+    color: #333;
+}
+
+.box form .remember .second a,
+.box form .remember label {
+    font-size: 14px;
+}
+
+.box form input::placeholder {
+    color: #555;
+    font-size: 16px;
+}
+
+.box.register {
+    position: relative;
+    z-index: 0;
+    border-radius: 30px;
+}
+
+.box.register h3 {
+    color: white;
+}
+
+.box.register form p {
+    font-size: 16px;
+    padding-top: 10px;
+    line-height: 26px;
+    color: white;
+}
+
+.box input[type=checkbox] {
+    width: 15px !important;
+    height: 15px !important;
+    margin-bottom: 0 !important;
+    margin-right: 8px !important;
+}
+
+.parallax {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    top: 0;
+    left: 0;
+    border-radius: 30px;
+}
+
+.box.register form button:hover {
+    color: white;
+}
+
+.box.register .button:hover {
+    color: black;
+}
+
+.box.register .button {
+    background-color: #ffd40d;
+    color: black;
+}
+
+.box.register .button:before {
+    border: 3px solid #ffd40d;
+}
