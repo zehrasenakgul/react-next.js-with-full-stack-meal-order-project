@@ -1,11 +1,9 @@
 import Head from "next/head";
 import React from "react";
-import Footer from "../components/layouts/footer";
-import Header from "../components/layouts/header";
+
 import { FaHome, FaStar, FaCheck } from "react-icons/fa";
 import Image from "next/image";
 import Review from "../components/review";
-
 const ProductDetails = () => {
   return (
     <>
@@ -164,5 +162,4 @@ const ProductDetails = () => {
     </>
   );
 };
-
 export default ProductDetails;

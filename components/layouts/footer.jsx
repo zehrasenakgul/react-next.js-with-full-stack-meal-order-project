@@ -1,6 +1,5 @@
 import React from "react";
 import WhiteLogo from "../ui/whiteLogo";
-
 const Footer = () => {
   return (
     <footer className=" pt-[6.25rem] bg-cover center">
@@ -123,5 +122,4 @@ const Footer = () => {
     </footer>
   );
 };
-
 export default Footer;

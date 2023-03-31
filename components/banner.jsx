@@ -1,5 +1,4 @@
 import React from "react";
-
 const BannerItem = () => {
   return (
     <div
@@ -21,7 +20,6 @@ const BannerItem = () => {
     </div>
   );
 };
-
 const Banner = () => {
   return (
     <section className="gap">
@@ -34,5 +32,4 @@ const Banner = () => {
     </section>
   );
 };
-
 export default Banner;

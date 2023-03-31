@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import OutsideClickHandler from "react-outside-click-handler";
 import Image from "next/image";
-
 const CardModal = ({ setIsCardModal, isCardModal }) => {
   return (
     <OutsideClickHandler onOutsideClick={() => setIsCardModal(false)}>
@@ -13,7 +12,6 @@ const CardModal = ({ setIsCardModal, isCardModal }) => {
         >
           ×
         </button>
-
         <ul>
           <li className="flex items-center relative">
             <div className="p-img light-bg">
@@ -24,14 +22,12 @@ const CardModal = ({ setIsCardModal, isCardModal }) => {
                 alt="Product Image"
               />
             </div>
-
             <div className="p-data">
               <h3 className="font-fredoka">Brown Sandwich</h3>
               <p className="font-fredoka">1 x $10.50</p>
             </div>
             <a href="JavaScript:void(0)" id="crosss"></a>
           </li>
-
           <li className="flex items-center relative">
             <div className="p-img light-bg">
               <Image
@@ -41,27 +37,21 @@ const CardModal = ({ setIsCardModal, isCardModal }) => {
                 alt="Product Image"
               />
             </div>
-
             <div className="p-data">
               <h3 className="font-fredoka">Banana Leaves</h3>
-
               <p className="font-fredoka">1 x $12.60</p>
             </div>
             <a href="JavaScript:void(0)" id="crosss"></a>
           </li>
         </ul>
-
         <div className="cart-total flex items-center justify-between">
           <span className="font-fredoka">Total:</span>
-
           <span className="font-fredoka">$23.10</span>
         </div>
-
         <div className="cart-btns flex items-center justify-between">
           <a className="font-bold text-black" href="cart">
             View Cart
           </a>
-
           <a
             className="font-bold bg-pink text-white checkout"
             href="checkout"
@@ -73,5 +63,4 @@ const CardModal = ({ setIsCardModal, isCardModal }) => {
     </OutsideClickHandler>
   );
 };
-
 export default CardModal;

@@ -1,6 +1,4 @@
 import Head from "next/head";
-import Header from "../components/layouts/header";
-import Footer from "../components/layouts/footer";
 import Carousel from "../components/carousel";
 import Menu from "../components/menu";
 import Banner from "../components/banner";
@@ -9,7 +7,6 @@ import New from "../components/new";
 import App from "../components/app";
 import Feature from "../components/feature";
 import Reserve from "../components/reserve";
-
 export default function Index() {
   return (
     <div>

@@ -1,11 +1,9 @@
 import React from "react";
-import Header from "../components/layouts/header";
-import Footer from "../components/layouts/footer";
+
 import { FaHome, FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import Head from "next/head";
 import Image from "next/image";
 import Paginate from "../components/paginate";
-
 const NewItem = () => {
   return (
     <div className="recent-news-two font-fredoka font-bold mb-10">
@@ -41,7 +39,6 @@ const NewItem = () => {
     </div>
   );
 };
-
 const News = () => {
   return (
     <div>
@@ -192,5 +189,4 @@ const News = () => {
     </div>
   );
 };
-
 export default News;

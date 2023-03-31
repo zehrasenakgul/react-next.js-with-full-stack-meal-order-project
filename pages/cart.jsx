@@ -1,6 +1,5 @@
 import React from "react";
-import Header from "../components/layouts/header";
-import Footer from "../components/layouts/footer";
+
 import { FaHome } from "react-icons/fa";
 import Head from "next/head";
 import Image from "next/image";
@@ -258,5 +257,4 @@ const Cart = () => {
     </div>
   );
 };
-
 export default Cart;

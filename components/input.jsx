@@ -1,5 +1,4 @@
 import React from "react";
-
 const Input = (props) => {
   const { type, touched, errorMessage, placeholder, ...inputProps } = props;
   return (
@@ -20,5 +19,4 @@ const Input = (props) => {
     </div>
   );
 };
-
 export default Input;

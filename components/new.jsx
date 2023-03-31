@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-
 const NewItem = () => {
   return (
     <div className="flex-1 items-center">
@@ -35,7 +34,6 @@ const NewItem = () => {
     </div>
   );
 };
-
 const New = () => {
   return (
     <section className="gap">
@@ -54,5 +52,4 @@ const New = () => {
     </section>
   );
 };
-
 export default New;

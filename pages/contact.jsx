@@ -1,10 +1,7 @@
 import React from "react";
-import Header from "../components/layouts/header";
-import Footer from "../components/layouts/footer";
 import { FaHome } from "react-icons/fa";
 import Head from "next/head";
 import Input from "../components/input";
-
 const Contact = () => {
     return (
         <div>
@@ -78,9 +75,7 @@ const Contact = () => {
                     </div>
                 </div>
             </section >
-          
         </div >
     )
 }
-
 export default Contact

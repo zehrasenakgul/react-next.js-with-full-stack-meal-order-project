@@ -1,6 +1,5 @@
 import React from "react";
 import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
-
 const Paginate = () => {
   return (
     <ul className="pagination m-auto mt-5">
@@ -32,5 +31,4 @@ const Paginate = () => {
     </ul>
   );
 };
-
 export default Paginate;

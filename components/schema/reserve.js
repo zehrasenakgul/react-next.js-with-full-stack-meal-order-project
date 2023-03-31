@@ -1,5 +1,4 @@
 import * as Yup from "yup";
-
 // validation
 export const reserveSchema = Yup.object({
     fullName: Yup.string()

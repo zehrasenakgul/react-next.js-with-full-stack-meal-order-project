@@ -1,9 +1,7 @@
 import Image from "next/image";
 import React from "react";
-
 const Menu = () => {
   const [openTab, setOpenTab] = React.useState(1);
-
   return (
     <section className="section-discover-menu mt-24">
       <div className="container mx-auto">
@@ -686,5 +684,4 @@ const Menu = () => {
     </section>
   );
 };
-
 export default Menu;

@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import { FaStar } from "react-icons/fa";
-
 const ReviewItem = () => {
   return (
     <li className="single-comment children">
@@ -28,7 +27,6 @@ const ReviewItem = () => {
     </li>
   );
 };
-
 const Review = () => {
   return (
     <section className="gap no-top font-fredoka">
@@ -105,5 +103,4 @@ const Review = () => {
     </section>
   );
 };
-
 export default Review;

@@ -2,14 +2,11 @@ import React from "react";
 import Input from "./input";
 import { useFormik } from "formik";
 import { reserveSchema } from "./schema/reserve";
-
 const Reserve = () => {
-
   const onSubmit = async (values, actions) => {
     await new Promise((resolve) => setTimeout(resolve, 4000));
     actions.resetForm();
   };
-
   const { values, errors, touched, handleSubmit, handleChange, handleBlur } = useFormik({
     initialValues: {
       fullName: "",
@@ -20,7 +17,6 @@ const Reserve = () => {
     onSubmit,
     validationSchema: reserveSchema,
   });
-
   const inputs = [
     {
       id: 1,
@@ -59,7 +55,6 @@ const Reserve = () => {
       touched: touched.date
     },
   ];
-
   return (
     <section>
       <div className="container mx-auto">
@@ -102,5 +97,4 @@ const Reserve = () => {
     </section>
   );
 };
-
 export default Reserve;

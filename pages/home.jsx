@@ -1,7 +1,5 @@
 import React from "react";
 import Head from "next/head";
-import Header from "../components/layouts/header";
-import Footer from "../components/layouts/footer";
 import Carousel from "../components/carousel";
 import Menu from "../components/menu";
 import Banner from "../components/banner";
@@ -10,7 +8,6 @@ import New from "../components/new";
 import App from "../components/app";
 import Feature from "../components/feature";
 import Reserve from "../components/reserve";
-
 const Index = () => {
   return (
     <div>
@@ -24,7 +21,7 @@ const Index = () => {
           href="https://fonts.gstatic.com"
           crossOrigin="true"
         />
-</Head>
+      </Head>
       <Carousel />
       <Menu />
       <Feature />
@@ -33,9 +30,7 @@ const Index = () => {
       <App />
       <New />
       <Brand />
-    
     </div>
   );
 };
-
 export default Index;

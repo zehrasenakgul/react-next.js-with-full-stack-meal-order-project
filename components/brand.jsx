@@ -24,5 +24,4 @@ const Brand = () => {
     </section>
   );
 };
-
 export default Brand;

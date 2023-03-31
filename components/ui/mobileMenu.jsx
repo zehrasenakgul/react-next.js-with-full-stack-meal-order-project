@@ -1,7 +1,6 @@
 import React from "react";
 import OutsideClickHandler from "react-outside-click-handler";
 import Logo from "./logo";
-
 const MobileMenu = ({ isMobileMenu, setIsMobileMenu }) => {
   return (
     <OutsideClickHandler onOutsideClick={() => setIsMobileMenu(false)}>
@@ -64,7 +63,6 @@ const MobileMenu = ({ isMobileMenu, setIsMobileMenu }) => {
             </a>
           </li>
         </ul>
-
         <a
           className="cursor-pointer"
           onClick={() => setIsMobileMenu(false)}
@@ -74,5 +72,4 @@ const MobileMenu = ({ isMobileMenu, setIsMobileMenu }) => {
     </OutsideClickHandler>
   );
 };
-
 export default MobileMenu;

@@ -1,11 +1,9 @@
 import Head from "next/head";
 import React from "react";
-import Footer from "../components/layouts/footer";
-import Header from "../components/layouts/header";
+
 import { FaHome, FaAngleRight, FaAngleLeft } from "react-icons/fa";
 import Image from "next/image";
 import Review from "../components/review";
-
 const NewDetails = () => {
   return (
     <>
@@ -218,5 +216,4 @@ const NewDetails = () => {
     </>
   );
 };
-
 export default NewDetails;

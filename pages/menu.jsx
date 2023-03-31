@@ -1,10 +1,8 @@
 import React from "react";
-import Header from "../components/layouts/header";
-import Footer from "../components/layouts/footer";
+
 import Head from "next/head";
 import Image from "next/image";
 import { FaHome } from "react-icons/fa";
-
 const MenuItem = () => {
   return (
     <div className="flex max-sm:block items-center discover-menu">
@@ -64,7 +62,6 @@ const MenuItem = () => {
     </div>
   );
 };
-
 const Menu = () => {
   return (
     <>
@@ -129,5 +126,4 @@ const Menu = () => {
     </>
   );
 };
-
 export default Menu;

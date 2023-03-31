@@ -4,7 +4,6 @@ import Logo from "../ui/logo";
 import MobileMenu from "../ui/mobileMenu";
 import { FaBars } from "react-icons/fa";
 import Link from "next/link";
-
 const Header = () => {
   const [isCardModal, setIsCardModal] = useState(false);
   const [isMobileMenu, setIsMobileMenu] = useState(false);
@@ -222,5 +221,4 @@ const Header = () => {
     </header>
   );
 };
-
 export default Header;

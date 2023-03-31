@@ -1,11 +1,9 @@
 import Head from "next/head";
 import React from "react";
-import Footer from "../components/layouts/footer";
-import Header from "../components/layouts/header";
+
 import Image from "next/image";
 import { FaHome, FaStar } from "react-icons/fa";
 import Paginate from "../components/paginate";
-
 const ShopItem = () => {
   return (
     <div className="w-1/3 max-md:w-1/2 max-sm:w-full max-lg:w-1/2">
@@ -118,5 +116,4 @@ const Shop = () => {
     </>
   );
 };
-
 export default Shop;
