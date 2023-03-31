@@ -10,6 +10,10 @@ export const loginSchema = Yup.object({
         .min(3, "Full Name must be at least 3 characters."),
     password: Yup.string()
         .required("Password is required.")
-        .min(5, "Password number must be at least 5 characters."),
+        .min(8, "Password must be at least 8 characters.")
+        .matches(
+            /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/,
+            "Password must contain at least one uppercase, one lowercase, one number and one special character."
+        ),
     rememberMe: Yup.boolean().oneOf([true], "You must accept the terms and conditions")
 });
