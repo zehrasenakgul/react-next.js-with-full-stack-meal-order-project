@@ -1,13 +1,14 @@
 import React from "react";
 
 const Input = (props) => {
-  const { type, placeholder, ...inputProps } = props;
+  const { type, touched, errorMessage, placeholder, ...inputProps } = props;
   return (
     <div className="w-full p-2">
       <label className="relative block cursor-text w-full">
         <input
           type={type}
-          className={`h-14 w-full border border-primary rounded-xl outline-none px-4 peer`}
+          className={`h-14 w-full border border-primary rounded-xl outline-none px-4 peer 
+          ${touched && errorMessage ? "text-red-500" : "text-black"}`}
           required
           {...inputProps}
         />
@@ -15,6 +16,7 @@ const Input = (props) => {
           {placeholder}
         </span>
       </label>
+      {touched && <span className="text-xs text-white">{errorMessage}</span>}
     </div>
   );
 };

@@ -7,11 +7,11 @@ const Menu = () => {
   return (
     <section className="section-discover-menu mt-24">
       <div className="container mx-auto">
-        <div class="heading-two">
+        <div className="heading-two">
           <h2 className="font-fredoka font-bold text-6xl max-sm:text-3xl max-md:text-3xl">
             Discover Menu
           </h2>
-          <div class="line"></div>
+          <div className="line"></div>
         </div>
         <div className="flex flex-wrap">
           <div className="w-full">

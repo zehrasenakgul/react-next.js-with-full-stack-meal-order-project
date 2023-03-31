@@ -3,8 +3,8 @@ import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
 
 const Paginate = () => {
   return (
-    <ul class="pagination m-auto mt-5">
-      <li class="prev">
+    <ul className="pagination m-auto mt-5">
+      <li className="prev">
         <a href="#" className="font-fredoka font-bold">
           <FaAngleLeft className="text-white text-2xl" />
         </a>
@@ -24,7 +24,7 @@ const Paginate = () => {
       <li>
         <a href="#" className="font-fredoka font-bold">18</a>
       </li>
-      <li class="next">
+      <li className="next">
         <a href="#" className="font-fredoka font-bold">
           <FaAngleRight className="text-white text-2xl" />
         </a>

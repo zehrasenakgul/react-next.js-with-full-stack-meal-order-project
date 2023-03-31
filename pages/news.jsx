@@ -4,6 +4,7 @@ import Footer from "../components/layouts/footer";
 import { FaHome, FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import Head from "next/head";
 import Image from "next/image";
+import Paginate from "../components/paginate";
 
 const NewItem = () => {
   return (
@@ -21,7 +22,7 @@ const NewItem = () => {
             <span className="mb-3">29 December, 2023</span>
           </a>
           <a href="newDetails">
-            <h2 className="text-4xl mb-3 hover:text-pink">
+            <h2 className="text-4xl mb-3 hover:text-pink max-lg:text-2xl">
               Tender fried baby squid with a salt, pepper
             </h2>
           </a>
@@ -86,39 +87,13 @@ const News = () => {
       <section className="gap our-blog font-fredoka font-bold">
         <div className="container mx-auto">
           <div className="flex flex-wrap justify-between max-xl:block">
-            <div className="w-4/6 max-xl:w-full max-md:ml-0">
+            <div className="w-3/6 max-xl:w-full mr-2 max-md:mr-0">
               <NewItem />
               <NewItem />
               <NewItem />
-              <ul className="pagination mt-20">
-                <li className="prev">
-                  <a href="#">
-                    <FaAngleLeft className="text-white" />{" "}
-                  </a>
-                </li>
-                <li>
-                  <a href="#">1</a>
-                </li>
-                <li>
-                  <a href="#">2</a>
-                </li>
-                <li>
-                  <a href="#">3</a>
-                </li>
-                <li>
-                  <a href="#">...</a>
-                </li>
-                <li>
-                  <a href="#">18</a>
-                </li>
-                <li className="next">
-                  <a href="#">
-                    <FaAngleRight className="text-white" />{" "}
-                  </a>
-                </li>
-              </ul>
+              <Paginate />
             </div>
-            <div className="w-2/6 max-xl:w-full max-md:ml-0 ">
+            <div className="w-2/6 max-xl:w-full max-md:ml-0 max-lg:mt-5 ">
               <div className="posts recent-posts">
                 <h3 className="text-3xl">Recent Posts</h3>
                 <ul>
