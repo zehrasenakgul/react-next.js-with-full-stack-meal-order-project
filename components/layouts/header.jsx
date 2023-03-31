@@ -4,6 +4,7 @@ import Logo from "../ui/logo";
 import MobileMenu from "../ui/mobileMenu";
 import { FaBars } from "react-icons/fa";
 import Link from "next/link";
+
 const Header = () => {
   const [isCardModal, setIsCardModal] = useState(false);
   const [isMobileMenu, setIsMobileMenu] = useState(false);
@@ -30,9 +31,10 @@ const Header = () => {
                   </i>
                   <h4 className="text-black font-fredoka text-base font-bold">
                     Phone:{" "}
-                    <a href="callto:+1(850)344066" className="ml-2">
-                      +1 (850) 344 0 66
-                    </a>
+                    <Link href="callto:+1(850)344066">
+                      <a className="ml-2">
+                        +1 (850) 344 0 66
+                      </a></Link>
                   </h4>
                 </div>
                 <div className="flex items-center mr-[3rem]">
@@ -50,32 +52,31 @@ const Header = () => {
                   </i>
                   <h4 className="text-black font-fredoka text-base font-bold">
                     Email:{" "}
-                    <a href="mailto:info@domain.com" className="ml-2">
-                      info@domain.com
-                    </a>
+                    <Link href="mailto:info@domain.com">
+                      <a className="ml-2">
+                        info@domain.com
+                      </a></Link>
                   </h4>
                 </div>
               </div>
               <div className="flex items-center  justify-between">
                 <div>
-                  <a
-                    href="#"
-                    className="border-b-[1px] border-black ml-10 font-bold text-black font-fredoka"
-                  >
-                    Facebook
-                  </a>
-                  <a
-                    href="#"
-                    className="border-b-[1px] border-black ml-10 font-bold text-black font-fredoka"
-                  >
-                    İnstagram
-                  </a>
-                  <a
-                    href="#"
-                    className="border-b-[1px] border-black ml-10 font-bold text-black font-fredoka"
-                  >
-                    Youtube
-                  </a>
+                  <Link href="#">
+                    <a className="border-b-[1px] border-black ml-10 font-bold text-black font-fredoka"
+                    >
+                      Facebook
+                    </a>
+                  </Link>
+                  <Link href="#">
+                    <a className="border-b-[1px] border-black ml-10 font-bold text-black font-fredoka"
+                    >
+                      İnstagram
+                    </a></Link>
+                  <Link href="#" >
+                    <a className="border-b-[1px] border-black ml-10 font-bold text-black font-fredoka"
+                    >
+                      Youtube
+                    </a></Link>
                 </div>
                 <div className="flex items-center">
                   <i>
@@ -93,9 +94,10 @@ const Header = () => {
                       </g>
                     </svg>
                   </i>
-                  <a href="" className="font-bold text-black font-fredoka ml-2">
-                    Login / Register
-                  </a>
+                  <Link href="">
+                    <a className="font-bold text-black font-fredoka ml-2">
+                      Login / Register
+                    </a></Link>
                 </div>
               </div>
             </div>
@@ -107,23 +109,26 @@ const Header = () => {
           <div className="flex flex-wrap items-center justify-between h-full">
             <div className="flex items-center justify-between h-full w-full xl:w-auto">
               <div className="logo">
-                <a href="home">
-                  <Logo />
-                </a>
+                <Link href="/home">
+                  <a >
+                    <Logo />
+                  </a>
+                </Link>
               </div>
               <div className="hidden cart-checkout max-sm:flex max-md:flex max-lg:flex max-xl:flex">
-                <a href="cart">
-                  <i>
-                    <svg
-                      viewBox="0 0 512 512"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g>
-                        <path d="m452 120h-60.946c-7.945-67.478-65.477-120-135.054-120s-127.109 52.522-135.054 120h-60.946c-11.046 0-20 8.954-20 20v352c0 11.046 8.954 20 20 20h392c11.046 0 20-8.954 20-20v-352c0-11.046-8.954-20-20-20zm-196-80c47.484 0 87.019 34.655 94.659 80h-189.318c7.64-45.345 47.175-80 94.659-80zm176 432h-352v-312h40v60c0 11.046 8.954 20 20 20s20-8.954 20-20v-60h192v60c0 11.046 8.954 20 20 20s20-8.954 20-20v-60h40z"></path>
-                      </g>
-                    </svg>
-                  </i>
-                </a>
+                <Link href="cart">
+                  <a>
+                    <i>
+                      <svg
+                        viewBox="0 0 512 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g>
+                          <path d="m452 120h-60.946c-7.945-67.478-65.477-120-135.054-120s-127.109 52.522-135.054 120h-60.946c-11.046 0-20 8.954-20 20v352c0 11.046 8.954 20 20 20h392c11.046 0 20-8.954 20-20v-352c0-11.046-8.954-20-20-20zm-196-80c47.484 0 87.019 34.655 94.659 80h-189.318c7.64-45.345 47.175-80 94.659-80zm176 432h-352v-312h40v60c0 11.046 8.954 20 20 20s20-8.954 20-20v-60h192v60c0 11.046 8.954 20 20 20s20-8.954 20-20v-60h40z"></path>
+                        </g>
+                      </svg>
+                    </i>
+                  </a></Link>
                 <div className="bar-menu">
                   <button onClick={() => setIsMobileMenu(true)}>
                     <FaBars />
@@ -134,52 +139,55 @@ const Header = () => {
             <nav className="flex items-center relative justify-center p-0 max-sm:hidden max-md:hidden max-lg:hidden max-xl:hidden">
               <ul className="flex list-none">
                 <li className="relative">
-                  <a
-                    href="home"
-                    className="text-black hover:text-pink font-bold font-fredoka border-b-[0.313rem] border-transparent capitalize text-lg block py-[2.5rem] px-[1.563rem]"
-                  >
-                    Home
-                  </a>
+                  <Link href="home">
+                    <a
+                      className="text-black hover:text-pink font-bold font-fredoka border-b-[0.313rem] border-transparent capitalize text-lg block py-[2.5rem] px-[1.563rem]"
+                    >
+                      Home
+                    </a></Link>
                 </li>
                 <li className="relative">
-                  <a
-                    href="menu"
-                    className="text-black hover:text-pink font-bold font-fredoka border-b-[0.313rem] border-transparent capitalize text-lg block py-[2.5rem] px-[1.563rem]"
-                  >
-                    Menu
-                  </a>
+                  <Link href="menu">
+                    <a
+                      className="text-black hover:text-pink font-bold font-fredoka border-b-[0.313rem] border-transparent capitalize text-lg block py-[2.5rem] px-[1.563rem]"
+                    >
+                      Menu
+                    </a></Link>
                 </li>
                 <li className="relative">
-                  <a
-                    href="shop"
-                    className="text-black hover:text-pink font-bold font-fredoka border-b-[0.313rem] border-transparent capitalize text-lg block py-[2.5rem] px-[1.563rem]"
+                  <Link href="shop"
                   >
-                    Shop
-                  </a>
+                    <a
+                      className="text-black hover:text-pink font-bold font-fredoka border-b-[0.313rem] border-transparent capitalize text-lg block py-[2.5rem] px-[1.563rem]"
+                    >
+                      Shop
+                    </a></Link>
                 </li>
                 <li className="relative">
-                  <a
-                    href="news"
-                    className="text-black  hover:text-pink font-bold font-fredoka border-b-[0.313rem] border-transparent capitalize text-lg block py-[2.5rem] px-[1.563rem]"
+                  <Link href="news"
                   >
-                    News
-                  </a>
+                    <a
+                      className="text-black  hover:text-pink font-bold font-fredoka border-b-[0.313rem] border-transparent capitalize text-lg block py-[2.5rem] px-[1.563rem]"
+                    >
+                      News
+                    </a></Link>
                 </li>
                 <li className="relative">
-                  <a
-                    href="about"
-                    className="text-black hover:text-pink font-bold font-fredoka border-b-[0.313rem] border-transparent capitalize text-lg block py-[2.5rem] px-[1.563rem]"
-                  >
-                    About
-                  </a>
+                  <Link href="about">
+                    <a
+                      className="text-black hover:text-pink font-bold font-fredoka border-b-[0.313rem] border-transparent capitalize text-lg block py-[2.5rem] px-[1.563rem]"
+                    >
+                      About
+                    </a></Link>
                 </li>
                 <li className="relative">
-                  <a
-                    href="contact"
-                    className="text-black hover:text-pink font-bold font-fredoka border-b-[0.313rem] border-transparent capitalize text-lg block py-[2.5rem] px-[1.563rem]"
+                  <Link href="contact"
                   >
-                    Contact
-                  </a>
+                    <a
+                      className="text-black hover:text-pink font-bold font-fredoka border-b-[0.313rem] border-transparent capitalize text-lg block py-[2.5rem] px-[1.563rem]"
+                    >
+                      Contact
+                    </a></Link>
                 </li>
               </ul>
             </nav>
