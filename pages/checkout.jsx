@@ -17,8 +17,7 @@ const Checkout = () => {
           href="https://fonts.gstatic.com"
           crossOrigin="true"
         />
-      </Head>
-      <Header />
+</Head>
       <div
         className="banner pt-10 pb-10"
         style={{
@@ -248,7 +247,7 @@ const Checkout = () => {
           </form>
         </div>
       </section>
-      <Footer />
+    
     </div>
   );
 };

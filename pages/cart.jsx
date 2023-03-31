@@ -17,8 +17,7 @@ const Cart = () => {
           href="https://fonts.gstatic.com"
           crossOrigin="true"
         />
-      </Head>
-      <Header />
+</Head>
       <div
         className="banner pt-10 pb-10"
         style={{
@@ -255,7 +254,7 @@ const Cart = () => {
           </form>
         </div>
       </section>
-      <Footer />
+    
     </div>
   );
 };

@@ -24,7 +24,6 @@ export default function Index() {
           crossOrigin="true"
         />
       </Head>
-      <Header />
       <Carousel />
       <Menu />
       <Feature />
@@ -33,7 +32,6 @@ export default function Index() {
       <App />
       <New />
       <Brand />
-      <Footer />
     </div>
   );
 }

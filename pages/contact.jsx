@@ -19,7 +19,6 @@ const Contact = () => {
                     crossOrigin="true"
                 />
             </Head>
-            <Header />
             <div
                 className="banner pt-10 pb-10"
                 style={{
@@ -79,7 +78,7 @@ const Contact = () => {
                     </div>
                 </div>
             </section >
-            <Footer />
+          
         </div >
     )
 }

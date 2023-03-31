@@ -24,8 +24,7 @@ const Index = () => {
           href="https://fonts.gstatic.com"
           crossOrigin="true"
         />
-      </Head>
-      <Header />
+</Head>
       <Carousel />
       <Menu />
       <Feature />
@@ -34,7 +33,7 @@ const Index = () => {
       <App />
       <New />
       <Brand />
-      <Footer />
+    
     </div>
   );
 };

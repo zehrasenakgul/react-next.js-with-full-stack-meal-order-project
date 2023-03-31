@@ -19,8 +19,7 @@ const ProductDetails = () => {
           href="https://fonts.gstatic.com"
           crossOrigin="true"
         />
-      </Head>
-      <Header />
+</Head>
       <div
         className="banner pt-10 pb-10"
         style={{
@@ -161,7 +160,7 @@ const ProductDetails = () => {
         </div>
       </div>
       <Review />
-      <Footer />
+    
     </>
   );
 };
