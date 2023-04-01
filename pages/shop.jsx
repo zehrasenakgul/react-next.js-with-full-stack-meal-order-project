@@ -1,16 +1,41 @@
 import Head from "next/head";
 import React from "react";
-
 import Image from "next/image";
 import { FaHome, FaStar } from "react-icons/fa";
 import Paginate from "../components/paginate";
-const ShopItem = () => {
+
+const foodItems = [
+  {
+    id: 1,
+    img: "/img/featured-dishes-1.png",
+    name: "Fried Potatoes With Chilli Sauce",
+    price: 10,
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda fugit corporis ex laboriosam tenetur at ad aspernatur"
+  },
+  {
+    id: 2,
+    img: "/img/featured-dishes-2.png",
+    name: "Pizza",
+    price: 30,
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda fugit corporis ex laboriosam tenetur at ad aspernatur"
+  },
+  ,
+  {
+    id: 3,
+    img: "/img/featured-dishes-3.png",
+    name: "Burger",
+    price: 50,
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda fugit corporis ex laboriosam tenetur at ad aspernatur"
+  },
+];
+const ShopItem = (props) => {
+  const { image, name, price } = props;
   return (
     <div className="w-1/3 max-md:w-1/2 max-sm:w-full max-lg:w-1/2">
       <div className="featured-dishes">
         <div className="featured-dishes-img">
           <Image
-            src="/img/featured-dishes-3.png"
+            src={image}
             width={323}
             height={322}
             alt="featured-dishes"
@@ -35,11 +60,11 @@ const ShopItem = () => {
         </ul>
         <a href="productDetails">
           <h5 className="font-fredoka font-bold text-xl text-black">
-            Parisian Hamburger
+            {name}
           </h5>
         </a>
         <p className="font-fredoka font-bold">
-          <span className="text-pink">$</span>10.85
+          <span className="text-pink">$</span>{price}
         </p>
         <a href="productDetails">
           <i>
@@ -71,7 +96,7 @@ const Shop = () => {
           href="https://fonts.gstatic.com"
           crossOrigin="true"
         />
-</Head>
+      </Head>
       <div
         className="banner pt-10 pb-10"
         style={{
@@ -102,17 +127,14 @@ const Shop = () => {
       <section className="gap">
         <div className="container mx-auto">
           <div className="flex flex-wrap">
-            <ShopItem />
-            <ShopItem />
-            <ShopItem />
-            <ShopItem />
-            <ShopItem />
-            <ShopItem />
+            {foodItems.map((item) => (
+              <ShopItem name={item.name} price={item.price} image={item.img} />
+            ))}
           </div>
           <Paginate />
         </div>
       </section>
-    
+
     </>
   );
 };

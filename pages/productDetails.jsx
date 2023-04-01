@@ -3,20 +3,51 @@ import React, { useState } from "react";
 import { FaHome, FaStar, FaCheck } from "react-icons/fa";
 import Image from "next/image";
 import Review from "../components/review";
+import { addProduct } from "../redux/cartSlice";
+import { useDispatch, useSelector } from "react-redux";
 
 const ProductDetails = () => {
-  const [quantityVal, setQuantityVal] = useState([]);
-  const [price, setPrice] = useState(10);
+  const [quantity, setQuantity] = useState();
+  const cart = useSelector((state) => state.cart);
+  const dispatch = useDispatch();
 
-  const setPriceFunction = (value, price) => {
-    setQuantityVal(value);
-    setPrice(value * price)
+  const [foodItem, setFoodItem] = useState({
+    id: 1,
+    image: "/img/product-detail-1.png",
+    name: "Fried Potatoes With Garlic Chilli Sauce",
+    price: 10,
+    setPrice: 10,
+    include: "Sausage, three rashers of streaky bacon, two fried eggs",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda fugit corporis ex laboriosam tenetur at ad aspernatur"
+  });
+
+  const setPriceFunction = (value) => {
+    setQuantity(value);
+    setFoodItem(() => ({
+      setPrice: (value * foodItem.price),
+      price: 10,
+      id: 1,
+      image: "/img/product-detail-1.png",
+      name: "Fried Potatoes With Garlic Chilli Sauce",
+      include: "Sausage, three rashers of streaky bacon, two fried eggs",
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda fugit corporis ex laboriosam tenetur at ad aspernatur"
+    }));
+    if (!value) {
+      setFoodItem(() => ({
+        price: 10,
+        setPrice: 10,
+        id: 1,
+        image: "/img/product-detail-1.png",
+        name: "Fried Potatoes With Garlic Chilli Sauce",
+        include: "Sausage, three rashers of streaky bacon, two fried eggs",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda fugit corporis ex laboriosam tenetur at ad aspernatur"
+      }));
+    }
   }
-
-  if (price == 0) {
-    setPrice(10)
-  }
-
+  const handleClick = () => {
+    dispatch(addProduct({ ...foodItem, quantity }));
+  };
+  console.log(cart);
   return (
     <>
       <Head>
@@ -72,7 +103,7 @@ const ProductDetails = () => {
                 </div>
                 <div className="featured-dishes-img">
                   <Image
-                    src="/img/product-detail-1.png"
+                    src={foodItem.image}
                     width={362}
                     height={453}
                     alt="featured-dishes"
@@ -97,18 +128,18 @@ const ProductDetails = () => {
               </div>
               <div className="product-info ">
                 <h3 className="text-6xl max-sm:text-3xl">
-                  Fried Potatoes With Garlic Chilli Sauce
+                  {foodItem.name}
                 </h3>
                 <form className="variations_form">
                   <div className="deal-week mb-4 flex items-center">
                     <h2 className="m-0 text-4xl">
-                      <span className="text-pink">$</span>{price}
+                      <span className="text-pink">$</span>{foodItem.setPrice}
                     </h2>
                     <del className="text-[#555555] text-2xl ml-2">$14.85</del>
                   </div>
                   <h5 className="text-2xl">What’s Included</h5>
                   <p className="text-[#555555]">
-                    Sausage, three rashers of streaky bacon, two fried eggs
+                    {foodItem.include}
                   </p>
                   <div className="flex items-center mt-4">
                     <input
@@ -116,9 +147,9 @@ const ProductDetails = () => {
                       className="input-text me-4"
                       name="quantity"
                       placeholder="1"
-                      onChange={e => { setPriceFunction(e.currentTarget.value, price); }}
+                      onChange={e => { setPriceFunction(parseInt(e.currentTarget.value)); }}
                     />
-                    <button className="button bg-pink ml-4">Add to Cart</button>
+                    <button className="button bg-pink ml-4" type="button" onClick={handleClick}>Add to Cart</button>
                   </div>
                   <ul className="product_meta">
                     <li>
@@ -143,28 +174,7 @@ const ProductDetails = () => {
         <div className="container mx-auto">
           <h2 className="pb-3 font-bold text-5xl">Description</h2>
           <p className="text-[#555555]">
-            Nisl quam nestibulum ac quam nec odio elementu sceisu aucan ligula.
-            Orci varius natoque pena tibus et magnis dis urient monte ulus mus
-            nellent esque habitanum ac quam nec odio rbine. Nisl quam nestibulum
-            ac quam nec odio elementu sceisu aucan ligula. toque pena tibus et
-            magnis dis u rient monte nascete ridic ulus mus nellentesque
-            habitanum ac quam nec odio rbine. Nisl quamu quam nec odio elementu
-            sceisu aucan ligula. Orc i varius natoque pena tibus et magnis dis
-            urient monte nascete ridic ulus mus a habitanum ac quam nec odio
-            rbine. Nisl quam nestibulum ac qua m nec odio elementu sceisu aucan
-            ligula. Orci varius natoque pe magnis dis urient monte nascete
-            ridiculus mus nellentesque habitanum ac quam nec odio rbine. Nisl
-            quam nestibulum ac quam ntoque pena tibus et magnis dis urient monte
-            nascete ridic ulus mus nellentesque habitanum ac quam nec odio
-            rbine. Nisl quam a quam nec odio elementu sceisu aucan ligula. Orci
-            varius natoque pena tibus et magnis dis urient monte nascet e ridic
-            ulus mus n habitanum ac quam nec odio rbine.
-            <br />
-            <br />
-            Nisl quam nestibulum ac quam nec odio elementu sceisu aucan ligula.
-            Orci varius natoque pena tibus et magnis dis urient monte quam nec
-            odio e lementu sceisu aucan ligula. Orci varius natoque pena tibus
-            et magnis dis urient monte nascete ridic.
+            {foodItem.desc}
           </p>
         </div>
       </div>

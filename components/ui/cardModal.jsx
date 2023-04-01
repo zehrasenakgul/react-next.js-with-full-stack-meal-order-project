@@ -1,7 +1,13 @@
 import React, { useState } from "react";
 import OutsideClickHandler from "react-outside-click-handler";
 import Image from "next/image";
+import { useDispatch, useSelector } from "react-redux";
+import { reset } from "../../redux/cartSlice";
+
 const CardModal = ({ setIsCardModal, isCardModal }) => {
+  const cart = useSelector((state) => state.cart);
+  const dispatch = useDispatch();
+
   return (
     <OutsideClickHandler onOutsideClick={() => setIsCardModal(false)}>
       <div className={"cart-popup" + (isCardModal ? " show-cart" : "")}>
@@ -13,40 +19,27 @@ const CardModal = ({ setIsCardModal, isCardModal }) => {
           ×
         </button>
         <ul>
-          <li className="flex items-center relative">
-            <div className="p-img light-bg">
-              <Image
-                src="/img/product-img-1.png"
-                width={75}
-                height={75}
-                alt="Product Image"
-              />
-            </div>
-            <div className="p-data">
-              <h3 className="font-fredoka">Brown Sandwich</h3>
-              <p className="font-fredoka">1 x $10.50</p>
-            </div>
-            <a href="JavaScript:void(0)" id="crosss"></a>
-          </li>
-          <li className="flex items-center relative">
-            <div className="p-img light-bg">
-              <Image
-                src="/img/product-img-1.png"
-                width={75}
-                height={75}
-                alt="Product Image"
-              />
-            </div>
-            <div className="p-data">
-              <h3 className="font-fredoka">Banana Leaves</h3>
-              <p className="font-fredoka">1 x $12.60</p>
-            </div>
-            <a href="JavaScript:void(0)" id="crosss"></a>
-          </li>
+          {cart.products.map((product) => (
+            <li className="flex items-center relative">
+              <div className="p-img light-bg">
+                <Image
+                  src={product.image}
+                  width={75}
+                  height={75}
+                  alt="Product Image"
+                />
+              </div>
+              <div className="p-data">
+                <h3 className="font-fredoka leading-5">{product.name}</h3>
+                <p className="font-fredoka">{product.quantity} x {product.price}</p>
+              </div>
+              <a href="JavaScript:void(0)" id="crosss"></a>
+            </li>
+          ))}
         </ul>
         <div className="cart-total flex items-center justify-between">
           <span className="font-fredoka">Total:</span>
-          <span className="font-fredoka">$23.10</span>
+          <span className="font-fredoka">${cart.total}</span>
         </div>
         <div className="cart-btns flex items-center justify-between">
           <a className="font-bold text-black" href="cart">
@@ -54,7 +47,7 @@ const CardModal = ({ setIsCardModal, isCardModal }) => {
           </a>
           <a
             className="font-bold bg-pink text-white checkout"
-            href="checkout"
+            href="checkout" onClick={() => dispatch(reset())}
           >
             Checkout
           </a>

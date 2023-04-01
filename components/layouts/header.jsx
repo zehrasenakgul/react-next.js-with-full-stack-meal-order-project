@@ -4,10 +4,13 @@ import Logo from "../ui/logo";
 import MobileMenu from "../ui/mobileMenu";
 import { FaBars } from "react-icons/fa";
 import Link from "next/link";
+import { useSelector } from "react-redux";
 
 const Header = () => {
   const [isCardModal, setIsCardModal] = useState(false);
   const [isMobileMenu, setIsMobileMenu] = useState(false);
+  const cart = useSelector((state) => state.cart);
+
   return (
     <header>
       <div className="bg-yellow p-2 block max-sm:hidden max-md:hidden max-lg:hidden max-xl:hidden">
@@ -193,6 +196,9 @@ const Header = () => {
             </nav>
             <div className="flex items-center justify-end max-sm:hidden max-md:hidden max-lg:hidden max-xl:hidden">
               <div className="relative donation">
+                <span className="cart-length">
+                  {cart.products.length === 0 ? "0" : cart.products.length}
+                </span>
                 <button onClick={() => setIsCardModal(true)}>
                   <svg
                     className="w-[1.563rem] h-[1.563rem] mr-5 block"
